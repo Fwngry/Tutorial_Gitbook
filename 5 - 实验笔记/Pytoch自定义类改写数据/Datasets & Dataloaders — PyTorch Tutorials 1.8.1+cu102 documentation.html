@@ -1,0 +1,1473 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation · Summary</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PyTorch 手把手自定义 Dataloader 读取数据.html" />
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    0 - 快速使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../0 - 快速使用/3 分钟快速配置 Git.html">
+            
+                <a href="../../0 - 快速使用/3 分钟快速配置 Git.html">
+            
+                    
+                    3 分钟快速配置 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../0 - 快速使用/Conda 常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/Conda 常用命令整理.html">
+            
+                    
+                    Conda 常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../0 - 快速使用/Linux&Shell常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/Linux&Shell常用命令整理.html">
+            
+                    
+                    Linux&Shell常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../0 - 快速使用/MacOS常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/MacOS常用命令整理.html">
+            
+                    
+                    MacOS常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../0 - 快速使用/Pycharm.html">
+            
+                <a href="../../0 - 快速使用/Pycharm.html">
+            
+                    
+                    Pycharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../0 - 快速使用/VSCODE常用快捷键整理.html">
+            
+                <a href="../../0 - 快速使用/VSCODE常用快捷键整理.html">
+            
+                    
+                    VSCODE常用快捷键整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../0 - 快速使用/XCODE常用快捷键整理.html">
+            
+                <a href="../../0 - 快速使用/XCODE常用快捷键整理.html">
+            
+                    
+                    XCODE常用快捷键整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    1 Git Github
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../1 - Git_Github/1. Github添加公钥.html">
+            
+                <a href="../../1 - Git_Github/1. Github添加公钥.html">
+            
+                    
+                    1. Github添加公钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../1 - Git_Github/2. 关于git clone.html">
+            
+                <a href="../../1 - Git_Github/2. 关于git clone.html">
+            
+                    
+                    2. 关于git clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../1 - Git_Github/3. 关于.gitconfig.html">
+            
+                <a href="../../1 - Git_Github/3. 关于.gitconfig.html">
+            
+                    
+                    3. 关于.gitconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../1 - Git_Github/4. 关于.gitignore.html">
+            
+                <a href="../../1 - Git_Github/4. 关于.gitignore.html">
+            
+                    
+                    4. 关于.gitignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../1 - Git_Github/5. 下载github特定子文件夹.html">
+            
+                <a href="../../1 - Git_Github/5. 下载github特定子文件夹.html">
+            
+                    
+                    5. 下载github特定子文件夹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../1 - Git_Github/6. git branch.html">
+            
+                <a href="../../1 - Git_Github/6. git branch.html">
+            
+                    
+                    6. git branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../1 - Git_Github/7. git fetch & pull 详解.html">
+            
+                <a href="../../1 - Git_Github/7. git fetch & pull 详解.html">
+            
+                    
+                    7. git fetch & pull 详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../1 - Git_Github/8. Gitbook与GitPages.html">
+            
+                <a href="../../1 - Git_Github/8. Gitbook与GitPages.html">
+            
+                    
+                    8. Gitbook与GitPages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../1 - Git_Github/报错 - Failed to connect to localhost port 1080: Connection refused.html">
+            
+                <a href="../../1 - Git_Github/报错 - Failed to connect to localhost port 1080: Connection refused.html">
+            
+                    
+                    报错 - Failed to connect to localhost port 1080: Connection refused
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    2 - 操作系统_服务器与网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../2 - 操作系统_服务器与网络/1. Download Ubuntu 镜像文件.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. Download Ubuntu 镜像文件.html">
+            
+                    
+                    1. Download Ubuntu 镜像文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../2 - 操作系统_服务器与网络/1. Ubuntu下的翻墙攻略.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. Ubuntu下的翻墙攻略.html">
+            
+                    
+                    1. Ubuntu下的翻墙攻略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../2 - 操作系统_服务器与网络/1. 免疫挂断：nohup 和 & .html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. 免疫挂断：nohup 和 & .html">
+            
+                    
+                    1. 免疫挂断：nohup 和 & 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../2 - 操作系统_服务器与网络/3. NATAPP 将内网映射到外网.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. NATAPP 将内网映射到外网.html">
+            
+                    
+                    3. NATAPP 将内网映射到外网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../2 - 操作系统_服务器与网络/3. 实验室主机联网奇怪经历.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 实验室主机联网奇怪经历.html">
+            
+                    
+                    3. 实验室主机联网奇怪经历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../2 - 操作系统_服务器与网络/3. 服务器与MacOS之间的SFTP.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 服务器与MacOS之间的SFTP.html">
+            
+                    
+                    3. 服务器与MacOS之间的SFTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../2 - 操作系统_服务器与网络/3. 远程连接服务器 - Natapp内网穿透服务器.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 远程连接服务器 - Natapp内网穿透服务器.html">
+            
+                    
+                    3. 远程连接服务器 - Natapp内网穿透服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../2 - 操作系统_服务器与网络/4. CMake3分钟上手.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/4. CMake3分钟上手.html">
+            
+                    
+                    4. CMake3分钟上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../2 - 操作系统_服务器与网络/4. Mac 下安装 OpenCV.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/4. Mac 下安装 OpenCV.html">
+            
+                    
+                    4. Mac 下安装 OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../2 - 操作系统_服务器与网络/软硬链接 与 Linux 文件系统.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/软硬链接 与 Linux 文件系统.html">
+            
+                    
+                    软硬链接 与 Linux 文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    3 - 环境搭建_开发效率
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../3 - 环境搭建_开发效率/2. Conda_ENV中正确使用pip Install.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Conda_ENV中正确使用pip Install.html">
+            
+                    
+                    2. Conda_ENV中正确使用pip Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../3 - 环境搭建_开发效率/2. Conda添加镜像 - 解决下载过慢.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Conda添加镜像 - 解决下载过慢.html">
+            
+                    
+                    2. Conda添加镜像 - 解决下载过慢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../3 - 环境搭建_开发效率/2. Linux 系统下 conda 的安装与使用.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Linux 系统下 conda 的安装与使用.html">
+            
+                    
+                    2. Linux 系统下 conda 的安装与使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../3 - 环境搭建_开发效率/2. Mac 必备神器 Homebrew.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Mac 必备神器 Homebrew.html">
+            
+                    
+                    2. Mac 必备神器 Homebrew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../3 - 环境搭建_开发效率/3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member.html">
+            
+                    
+                    3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../3 - 环境搭建_开发效率/介绍-Jupyter网络笔记本.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/介绍-Jupyter网络笔记本.html">
+            
+                    
+                    介绍-Jupyter网络笔记本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    4 Python API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../4 - Python_API/Language - Python.html">
+            
+                <a href="../../4 - Python_API/Language - Python.html">
+            
+                    
+                    Language Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../4 - Python_API/Lib - TensorFlow_API.html">
+            
+                <a href="../../4 - Python_API/Lib - TensorFlow_API.html">
+            
+                    
+                    Lib Tensor Flow API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../4 - Python_API/Python 中 with 用法及原理.html">
+            
+                <a href="../../4 - Python_API/Python 中 with 用法及原理.html">
+            
+                    
+                    Python 中 with 用法及原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../4 - Python_API/python 中，花括号，中括号，小括号的区别.html">
+            
+                <a href="../../4 - Python_API/python 中，花括号，中括号，小括号的区别.html">
+            
+                    
+                    python 中，花括号，中括号，小括号的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../4 - Python_API/Python 判断列表中是否存在某元素.html">
+            
+                <a href="../../4 - Python_API/Python 判断列表中是否存在某元素.html">
+            
+                    
+                    Python 判断列表中是否存在某元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../4 - Python_API/python 获取当前工作目录.html">
+            
+                <a href="../../4 - Python_API/python 获取当前工作目录.html">
+            
+                    
+                    python 获取当前工作目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../4 - Python_API/python 读写 csv 文件（创建，追加，覆盖）.html">
+            
+                <a href="../../4 - Python_API/python 读写 csv 文件（创建，追加，覆盖）.html">
+            
+                    
+                    python 读写 csv 文件（创建，追加，覆盖）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../4 - Python_API/python 路径拼接 os.path.join(">
+            
+                <span>
+            
+                    
+                    python 路径拼接 os.path.join() 函数的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../4 - Python_API/python 逐行读取文件内容的三种方法.html">
+            
+                <a href="../../4 - Python_API/python 逐行读取文件内容的三种方法.html">
+            
+                    
+                    python 逐行读取文件内容的三种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../4 - Python_API/Python3 rfind(">
+            
+                <span>
+            
+                    
+                    Python3 rfind() 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../../4 - Python_API/python读写 JSON 数据.html">
+            
+                <a href="../../4 - Python_API/python读写 JSON 数据.html">
+            
+                    
+                    python读写 JSON 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../../4 - Python_API/使用 opencv 进行简单的抠图.html">
+            
+                <a href="../../4 - Python_API/使用 opencv 进行简单的抠图.html">
+            
+                    
+                    使用 opencv 进行简单的抠图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    5 - 实验笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    Pytoch自定义类改写数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1.1" data-path="Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.html">
+            
+                <a href="Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.html">
+            
+                    
+                    Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="PyTorch 手把手自定义 Dataloader 读取数据.html">
+            
+                <a href="PyTorch 手把手自定义 Dataloader 读取数据.html">
+            
+                    
+                    PyTorch 手把手自定义 Dataloader 读取数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="Pytorch 源码解读 - torchvision.datasets.folder.html">
+            
+                <a href="Pytorch 源码解读 - torchvision.datasets.folder.html">
+            
+                    
+                    Pytorch 源码解读 - torchvision.datasets.folder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4" data-path="torchvision自定义数据读取.html">
+            
+                <a href="torchvision自定义数据读取.html">
+            
+                    
+                    torchvision自定义数据读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.5" data-path="自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader.html">
+            
+                <a href="自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader.html">
+            
+                    
+                    自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" >
+            
+                <span>
+            
+                    
+                    Yolo Deepsort
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../Yolo+Deepsort/【好文😭】手把手教你用 YOLOv5 训练自己的数据集.html">
+            
+                <a href="../Yolo+Deepsort/【好文😭】手把手教你用 YOLOv5 训练自己的数据集.html">
+            
+                    
+                    【好文😭】手把手教你用 YOLOv5 训练自己的数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../Yolo+Deepsort/【目标检测实战】Darknet—yolov3 模型训练（VOC 数据集">
+            
+                <span>
+            
+                    
+                    【目标检测实战】Darknet—yolov3 模型训练（VOC 数据集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../Yolo+Deepsort/DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.html">
+            
+                <a href="../Yolo+Deepsort/DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.html">
+            
+                    
+                    DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../Yolo+Deepsort/Market 1501 数据集及在 DeepSort 中的训练.html">
+            
+                <a href="../Yolo+Deepsort/Market 1501 数据集及在 DeepSort 中的训练.html">
+            
+                    
+                    Market 1501 数据集及在 DeepSort 中的训练
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="../Yolo+Deepsort/yolov5 启用数据增强与 tensorboard 可视化.html">
+            
+                <a href="../Yolo+Deepsort/yolov5 启用数据增强与 tensorboard 可视化.html">
+            
+                    
+                    yolov5 启用数据增强与 tensorboard 可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="../Yolo+Deepsort/YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集.html">
+            
+                <a href="../Yolo+Deepsort/YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集.html">
+            
+                    
+                    YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="../Yolo+Deepsort/Yolov5_DeepSort_Pytorch 训练自己的数据.html">
+            
+                <a href="../Yolo+Deepsort/Yolov5_DeepSort_Pytorch 训练自己的数据.html">
+            
+                    
+                    Yolov5_DeepSort_Pytorch 训练自己的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" >
+            
+                <span>
+            
+                    
+                    YOLO实验
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../YOLO实验/Installing Darknet.html">
+            
+                <a href="../YOLO实验/Installing Darknet.html">
+            
+                    
+                    Installing Darknet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../YOLO实验/YOLO: Real-Time Object Detection.html">
+            
+                <a href="../YOLO实验/YOLO: Real-Time Object Detection.html">
+            
+                    
+                    YOLO Real Time Object Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="../YOLO实验/在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.html">
+            
+                <a href="../YOLO实验/在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.html">
+            
+                    
+                    在 Linux 服务器环境下使用 yolov3 训练 voc 数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="../YOLO实验/快速开始ScaledYOLOv4-知乎.html">
+            
+                <a href="../YOLO实验/快速开始ScaledYOLOv4-知乎.html">
+            
+                    
+                    快速开始ScaledYOLOv4-知乎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="../YOLO实验/笔记 - 在服务器上用 YOLOv4 训练和测试数据集.html">
+            
+                <a href="../YOLO实验/笔记 - 在服务器上用 YOLOv4 训练和测试数据集.html">
+            
+                    
+                    笔记 - 在服务器上用 YOLOv4 训练和测试数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../🌟Pytorch 搭建 YoloV4 目标检测平台.html">
+            
+                <a href="../🌟Pytorch 搭建 YoloV4 目标检测平台.html">
+            
+                    
+                    🌟Pytorch 搭建 YoloV4 目标检测平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../yolo--- 参数解释之 cfg 文件参数.html">
+            
+                <a href="../yolo--- 参数解释之 cfg 文件参数.html">
+            
+                    
+                    yolo--- 参数解释之 cfg 文件参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    6 - 数字生活
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../6 - 数字生活/1. 深度学习图像标注工具 - Labelme.html">
+            
+                <a href="../../6 - 数字生活/1. 深度学习图像标注工具 - Labelme.html">
+            
+                    
+                    1. 深度学习图像标注工具 - Labelme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../6 - 数字生活/Kindle使用手册.html">
+            
+                <a href="../../6 - 数字生活/Kindle使用手册.html">
+            
+                    
+                    Kindle使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../6 - 数字生活/卡西欧gg1000指针调节.html">
+            
+                <a href="../../6 - 数字生活/卡西欧gg1000指针调节.html">
+            
+                    
+                    卡西欧gg1000指针调节
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#loading-a-dataset"><b>1.1. </b>Loading a Dataset</a></li><li><span class="title-icon "></span><a href="#iterating-and-visualizing-the-dataset"><b>1.2. </b>Iterating and Visualizing the Dataset</a></li><li><span class="title-icon "></span><a href="#creating-a-custom-dataset-for-your-files"><b>1.3. </b>Creating a Custom Dataset for your files</a></li><ul><li><span class="title-icon "></span><a href="#init"><b>1.3.1. </b>init</a></li><li><span class="title-icon "></span><a href="#len"><b>1.3.2. </b>len</a></li><li><span class="title-icon "></span><a href="#getitem"><b>1.3.3. </b>getitem</a></li></ul><li><span class="title-icon "></span><a href="#preparing-your-data-for-training-with-dataloaders"><b>1.4. </b>Preparing your data for training with DataLoaders</a></li><li><span class="title-icon "></span><a href="#iterate-through-the-dataloader"><b>1.5. </b>Iterate through the DataLoader</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><blockquote>
+<p>&#x672C;&#x6587;&#x7531; <a href="http://ksria.com/simpread/" target="_blank">&#x7B80;&#x60A6; SimpRead</a> &#x8F6C;&#x7801;&#xFF0C; &#x539F;&#x6587;&#x5730;&#x5740; <a href="https://pytorch.org/tutorials/beginner/basics/data_tutorial.html" target="_blank">pytorch.org</a></p>
+</blockquote>
+<p>Note</p>
+<p>Click <a href="#sphx-glr-download-beginner-basics-data-tutorial-py">here</a> to download the full example code</p>
+<p><a href="https://pytorch.org/tutorials/beginner/basics/intro.html" target="_blank">Learn the Basics</a> || <a href="https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html" target="_blank">Quickstart</a> || <a href="https://pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html" target="_blank">Tensors</a> || <strong>Datasets &amp; DataLoaders</strong> || <a href="https://pytorch.org/tutorials/beginner/basics/transforms_tutorial.html" target="_blank">Transforms</a> || <a href="https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html" target="_blank">Build Model</a> || <a href="https://pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html" target="_blank">Autograd</a> || <a href="https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html" target="_blank">Optimization</a> || <a href="https://pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html" target="_blank">Save &amp; Load Model</a></p>
+<p>Code for processing data samples can get messy and hard to maintain; we ideally want our dataset code to be decoupled from our model training code for better readability and modularity. PyTorch provides two data primitives: <code>torch.utils.data.DataLoader</code> and <code>torch.utils.data.Dataset</code> that allow you to use pre-loaded datasets as well as your own data. <code>Dataset</code> stores the samples and their corresponding labels, and <code>DataLoader</code> wraps an iterable around the <code>Dataset</code> to enable easy access to the samples.</p>
+<p>PyTorch domain libraries provide a number of pre-loaded datasets (such as FashionMNIST) that subclass <code>torch.utils.data.Dataset</code> and implement functions specific to the particular data. They can be used to prototype and benchmark your model. You can find them here: <a href="https://pytorch.org/vision/stable/datasets.html" target="_blank">Image Datasets</a>, <a href="https://pytorch.org/text/stable/datasets.html" target="_blank">Text Datasets</a>, and <a href="https://pytorch.org/audio/stable/datasets.html" target="_blank">Audio Datasets</a></p>
+<h2 id="loading-a-dataset"><a name="loading-a-dataset" class="anchor-navigation-ex-anchor" href="#loading-a-dataset"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Loading a Dataset</h2>
+<p>Here is an example of how to load the <a href="https://research.zalando.com/project/fashion_mnist/fashion_mnist/" target="_blank">Fashion-MNIST</a> dataset from TorchVision. Fashion-MNIST is a dataset of Zalando&#x2019;s article images consisting of of 60,000 training examples and 10,000 test examples. Each example comprises a 28&#xD7;28 grayscale image and an associated label from one of 10 classes.</p>
+<p>We load the <a href="https://pytorch.org/vision/stable/datasets.html#fashion-mnist" target="_blank">FashionMNIST Dataset</a> with the following parameters:</p>
+<ul>
+<li><code>root</code> is the path where the train/test data is stored,</li>
+<li><code>train</code> specifies training or test dataset,</li>
+<li><code>download=True</code> downloads the data from the internet if it&#x2019;s not available at <code>root</code>.</li>
+<li><code>transform</code> and <code>target_transform</code> specify the feature and label transformations</li>
+</ul>
+<pre><code>import torch
+from torch.utils.data import Dataset
+from torchvision import datasets
+from torchvision.transforms import ToTensor
+import matplotlib.pyplot as plt
+
+
+training_data = datasets.FashionMNIST(
+    root=&quot;data&quot;,
+    train=True,
+    download=True,
+    transform=ToTensor()
+)
+
+test_data = datasets.FashionMNIST(
+    root=&quot;data&quot;,
+    train=False,
+    download=True,
+    transform=ToTensor()
+)
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<p>Out:</p>
+<pre><code>Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz to data/FashionMNIST/raw/train-images-idx3-ubyte.gz
+Extracting data/FashionMNIST/raw/train-images-idx3-ubyte.gz to data/FashionMNIST/raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz to data/FashionMNIST/raw/train-labels-idx1-ubyte.gz
+Extracting data/FashionMNIST/raw/train-labels-idx1-ubyte.gz to data/FashionMNIST/raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz to data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz to data/FashionMNIST/raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz to data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz to data/FashionMNIST/raw
+
+Processing...
+Done!
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<h2 id="iterating-and-visualizing-the-dataset"><a name="iterating-and-visualizing-the-dataset" class="anchor-navigation-ex-anchor" href="#iterating-and-visualizing-the-dataset"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Iterating and Visualizing the Dataset</h2>
+<p>We can index <code>Datasets</code> manually like a list: <code>training_data[index]</code>. We use <code>matplotlib</code> to visualize some samples in our training data.</p>
+<pre><code>labels_map = {
+    0: &quot;T-Shirt&quot;,
+    1: &quot;Trouser&quot;,
+    2: &quot;Pullover&quot;,
+    3: &quot;Dress&quot;,
+    4: &quot;Coat&quot;,
+    5: &quot;Sandal&quot;,
+    6: &quot;Shirt&quot;,
+    7: &quot;Sneaker&quot;,
+    8: &quot;Bag&quot;,
+    9: &quot;Ankle Boot&quot;,
+}
+figure = plt.figure(figsize=(8, 8))
+cols, rows = 3, 3
+for i in range(1, cols * rows + 1):
+    sample_idx = torch.randint(len(training_data), size=(1,)).item()
+    img, label = training_data[sample_idx]
+    figure.add_subplot(rows, cols, i)
+    plt.title(labels_map[label])
+    plt.axis(&quot;off&quot;)
+    plt.imshow(img.squeeze(), cmap=&quot;gray&quot;)
+plt.show()
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<p><img src="https://pytorch.org/tutorials/_images/sphx_glr_data_tutorial_001.png" alt=""></p>
+<hr>
+<h2 id="creating-a-custom-dataset-for-your-files"><a name="creating-a-custom-dataset-for-your-files" class="anchor-navigation-ex-anchor" href="#creating-a-custom-dataset-for-your-files"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Creating a Custom Dataset for your files</h2>
+<p>A custom Dataset class must implement three functions: <strong>init</strong>, <strong>len</strong>, and <strong>getitem</strong>. Take a look at this implementation; the FashionMNIST images are stored in a directory <code>img_dir</code>, and their labels are stored separately in a CSV file <code>annotations_file</code>.</p>
+<p>In the next sections, we&#x2019;ll break down what&#x2019;s happening in each of these functions.</p>
+<pre><code>import os
+import pandas as pd
+from torchvision.io import read_image
+
+class CustomImageDataset(Dataset):
+    def __init__(self, annotations_file, img_dir, transform=None, target_transform=None):
+        self.img_labels = pd.read_csv(annotations_file)
+        self.img_dir = img_dir
+        self.transform = transform
+        self.target_transform = target_transform
+
+    def __len__(self):
+        return len(self.img_labels)
+
+    def __getitem__(self, idx):
+        img_path = os.path.join(self.img_dir, self.img_labels.iloc[idx, 0])
+        image = read_image(img_path)
+        label = self.img_labels.iloc[idx, 1]
+        if self.transform:
+            image = self.transform(image)
+        if self.target_transform:
+            label = self.target_transform(label)
+        sample = {&quot;image&quot;: image, &quot;label&quot;: label}
+        return sample
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<h3 id="init"><a name="init" class="anchor-navigation-ex-anchor" href="#init"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. init</h3>
+<p>The <strong>init</strong> function is run once when instantiating the Dataset object. We initialize the directory containing the images, the annotations file, and both transforms (covered in more detail in the next section).</p>
+<p>The labels.csv file looks like:</p>
+<pre><code>tshirt1.jpg, 0
+tshirt2.jpg, 0
+......
+ankleboot999.jpg, 9
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<pre><code>def __init__(self, annotations_file, img_dir, transform=None, target_transform=None):
+    self.img_labels = pd.read_csv(annotations_file)
+    self.img_dir = img_dir
+    self.transform = transform
+    self.target_transform = target_transform
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<h3 id="len"><a name="len" class="anchor-navigation-ex-anchor" href="#len"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. len</h3>
+<p>The <strong>len</strong> function returns the number of samples in our dataset.</p>
+<p>Example:</p>
+<pre><code>def __len__(self):
+    return len(self.img_labels)
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<h3 id="getitem"><a name="getitem" class="anchor-navigation-ex-anchor" href="#getitem"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. getitem</h3>
+<p>The <strong>getitem</strong> function loads and returns a sample from the dataset at the given index <code>idx</code>. Based on the index, it identifies the image&#x2019;s location on disk, converts that to a tensor using <code>read_image</code>, retrieves the corresponding label from the csv data in <code>self.img_labels</code>, calls the transform functions on them (if applicable), and returns the tensor image and corresponding label in a Python dict.</p>
+<pre><code>def __getitem__(self, idx):
+    img_path = os.path.join(self.img_dir, self.img_labels.iloc[idx, 0])
+    image = read_image(img_path)
+    label = self.img_labels.iloc[idx, 1]
+    if self.transform:
+        image = self.transform(image)
+    if self.target_transform:
+        label = self.target_transform(label)
+    sample = {&quot;image&quot;: image, &quot;label&quot;: label}
+    return sample
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<hr>
+<h2 id="preparing-your-data-for-training-with-dataloaders"><a name="preparing-your-data-for-training-with-dataloaders" class="anchor-navigation-ex-anchor" href="#preparing-your-data-for-training-with-dataloaders"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Preparing your data for training with DataLoaders</h2>
+<p>The <code>Dataset</code> retrieves our dataset&#x2019;s features and labels one sample at a time. While training a model, we typically want to pass samples in &#x201C;minibatches&#x201D;, reshuffle the data at every epoch to reduce model overfitting, and use Python&#x2019;s <code>multiprocessing</code> to speed up data retrieval.</p>
+<p><code>DataLoader</code> is an iterable that abstracts this complexity for us in an easy API.</p>
+<pre><code>from torch.utils.data import DataLoader
+
+train_dataloader = DataLoader(training_data, batch_size=64, shuffle=True)
+test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True)
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<h2 id="iterate-through-the-dataloader"><a name="iterate-through-the-dataloader" class="anchor-navigation-ex-anchor" href="#iterate-through-the-dataloader"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Iterate through the DataLoader</h2>
+<p>We have loaded that dataset into the <code>Dataloader</code> and can iterate through the dataset as needed. Each iteration below returns a batch of <code>train_features</code> and <code>train_labels</code> (containing <code>batch_size=64</code> features and labels respectively). Because we specified <code>shuffle=True</code>, after we iterate over all batches the data is shuffled (for finer-grained control over the data loading order, take a look at <a href="https://pytorch.org/docs/stable/data.html#data-loading-order-and-sampler" target="_blank">Samplers</a>).</p>
+<pre><code># Display image and label.
+train_features, train_labels = next(iter(train_dataloader))
+print(f&quot;Feature batch shape: {train_features.size()}&quot;)
+print(f&quot;Labels batch shape: {train_labels.size()}&quot;)
+img = train_features[0].squeeze()
+label = train_labels[0]
+plt.imshow(img, cmap=&quot;gray&quot;)
+plt.show()
+print(f&quot;Label: {label}&quot;)
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<p><img src="https://pytorch.org/tutorials/_images/sphx_glr_data_tutorial_002.png" alt=""></p>
+<p>Out:</p>
+<pre><code>Feature batch shape: torch.Size([64, 1, 28, 28])
+Labels batch shape: torch.Size([64])
+Label: 8
+</code></pre><p><img src="https://pytorch.org/tutorials/_static/copy-button.svg" alt=""></p>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="PyTorch 手把手自定义 Dataloader 读取数据.html" class="navigation navigation-next navigation-unique" aria-label="Next page: PyTorch 手把手自定义 Dataloader 读取数据">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation","level":"1.7.1.1","depth":3,"next":{"title":"PyTorch 手把手自定义 Dataloader 读取数据","level":"1.7.1.2","depth":3,"path":"5 - 实验笔记/Pytoch自定义类改写数据/PyTorch 手把手自定义 Dataloader 读取数据.md","ref":"5 - 实验笔记/Pytoch自定义类改写数据/PyTorch 手把手自定义 Dataloader 读取数据.md","articles":[]},"previous":{"title":"Pytoch自定义类改写数据","level":"1.7.1","depth":2,"ref":"","articles":[{"title":"Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation","level":"1.7.1.1","depth":3,"path":"5 - 实验笔记/Pytoch自定义类改写数据/Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.md","ref":"5 - 实验笔记/Pytoch自定义类改写数据/Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.md","articles":[]},{"title":"PyTorch 手把手自定义 Dataloader 读取数据","level":"1.7.1.2","depth":3,"path":"5 - 实验笔记/Pytoch自定义类改写数据/PyTorch 手把手自定义 Dataloader 读取数据.md","ref":"5 - 实验笔记/Pytoch自定义类改写数据/PyTorch 手把手自定义 Dataloader 读取数据.md","articles":[]},{"title":"Pytorch 源码解读 - torchvision.datasets.folder","level":"1.7.1.3","depth":3,"path":"5 - 实验笔记/Pytoch自定义类改写数据/Pytorch 源码解读 - torchvision.datasets.folder.md","ref":"5 - 实验笔记/Pytoch自定义类改写数据/Pytorch 源码解读 - torchvision.datasets.folder.md","articles":[]},{"title":"torchvision自定义数据读取","level":"1.7.1.4","depth":3,"path":"5 - 实验笔记/Pytoch自定义类改写数据/torchvision自定义数据读取.md","ref":"5 - 实验笔记/Pytoch自定义类改写数据/torchvision自定义数据读取.md","articles":[]},{"title":"自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader","level":"1.7.1.5","depth":3,"path":"5 - 实验笔记/Pytoch自定义类改写数据/自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader.md","ref":"5 - 实验笔记/Pytoch自定义类改写数据/自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","github-buttons","copy-code-button","anchor-navigation-ex","-highlight","-lunr","-search","search-pro","splitter"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Summary","gitbook":"*"},"file":{"path":"5 - 实验笔记/Pytoch自定义类改写数据/Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.md","mtime":"2021-08-03T09:22:20.858Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-03T09:23:02.254Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

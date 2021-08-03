@@ -1,0 +1,1475 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>YOLO Real Time Object Detection · Summary</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.html" />
+    
+    
+    <link rel="prev" href="Installing Darknet.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    0 - 快速使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../0 - 快速使用/3 分钟快速配置 Git.html">
+            
+                <a href="../../0 - 快速使用/3 分钟快速配置 Git.html">
+            
+                    
+                    3 分钟快速配置 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../0 - 快速使用/Conda 常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/Conda 常用命令整理.html">
+            
+                    
+                    Conda 常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../0 - 快速使用/Linux&Shell常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/Linux&Shell常用命令整理.html">
+            
+                    
+                    Linux&Shell常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../0 - 快速使用/MacOS常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/MacOS常用命令整理.html">
+            
+                    
+                    MacOS常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../0 - 快速使用/Pycharm.html">
+            
+                <a href="../../0 - 快速使用/Pycharm.html">
+            
+                    
+                    Pycharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../0 - 快速使用/VSCODE常用快捷键整理.html">
+            
+                <a href="../../0 - 快速使用/VSCODE常用快捷键整理.html">
+            
+                    
+                    VSCODE常用快捷键整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../0 - 快速使用/XCODE常用快捷键整理.html">
+            
+                <a href="../../0 - 快速使用/XCODE常用快捷键整理.html">
+            
+                    
+                    XCODE常用快捷键整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    1 Git Github
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../1 - Git_Github/1. Github添加公钥.html">
+            
+                <a href="../../1 - Git_Github/1. Github添加公钥.html">
+            
+                    
+                    1. Github添加公钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../1 - Git_Github/2. 关于git clone.html">
+            
+                <a href="../../1 - Git_Github/2. 关于git clone.html">
+            
+                    
+                    2. 关于git clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../1 - Git_Github/3. 关于.gitconfig.html">
+            
+                <a href="../../1 - Git_Github/3. 关于.gitconfig.html">
+            
+                    
+                    3. 关于.gitconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../1 - Git_Github/4. 关于.gitignore.html">
+            
+                <a href="../../1 - Git_Github/4. 关于.gitignore.html">
+            
+                    
+                    4. 关于.gitignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../1 - Git_Github/5. 下载github特定子文件夹.html">
+            
+                <a href="../../1 - Git_Github/5. 下载github特定子文件夹.html">
+            
+                    
+                    5. 下载github特定子文件夹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../1 - Git_Github/6. git branch.html">
+            
+                <a href="../../1 - Git_Github/6. git branch.html">
+            
+                    
+                    6. git branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../1 - Git_Github/7. git fetch & pull 详解.html">
+            
+                <a href="../../1 - Git_Github/7. git fetch & pull 详解.html">
+            
+                    
+                    7. git fetch & pull 详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../1 - Git_Github/8. Gitbook与GitPages.html">
+            
+                <a href="../../1 - Git_Github/8. Gitbook与GitPages.html">
+            
+                    
+                    8. Gitbook与GitPages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../1 - Git_Github/报错 - Failed to connect to localhost port 1080: Connection refused.html">
+            
+                <a href="../../1 - Git_Github/报错 - Failed to connect to localhost port 1080: Connection refused.html">
+            
+                    
+                    报错 - Failed to connect to localhost port 1080: Connection refused
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    2 - 操作系统_服务器与网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../2 - 操作系统_服务器与网络/1. Download Ubuntu 镜像文件.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. Download Ubuntu 镜像文件.html">
+            
+                    
+                    1. Download Ubuntu 镜像文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../2 - 操作系统_服务器与网络/1. Ubuntu下的翻墙攻略.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. Ubuntu下的翻墙攻略.html">
+            
+                    
+                    1. Ubuntu下的翻墙攻略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../2 - 操作系统_服务器与网络/1. 免疫挂断：nohup 和 & .html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. 免疫挂断：nohup 和 & .html">
+            
+                    
+                    1. 免疫挂断：nohup 和 & 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../2 - 操作系统_服务器与网络/3. NATAPP 将内网映射到外网.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. NATAPP 将内网映射到外网.html">
+            
+                    
+                    3. NATAPP 将内网映射到外网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../2 - 操作系统_服务器与网络/3. 实验室主机联网奇怪经历.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 实验室主机联网奇怪经历.html">
+            
+                    
+                    3. 实验室主机联网奇怪经历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../2 - 操作系统_服务器与网络/3. 服务器与MacOS之间的SFTP.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 服务器与MacOS之间的SFTP.html">
+            
+                    
+                    3. 服务器与MacOS之间的SFTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../2 - 操作系统_服务器与网络/3. 远程连接服务器 - Natapp内网穿透服务器.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 远程连接服务器 - Natapp内网穿透服务器.html">
+            
+                    
+                    3. 远程连接服务器 - Natapp内网穿透服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../2 - 操作系统_服务器与网络/4. CMake3分钟上手.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/4. CMake3分钟上手.html">
+            
+                    
+                    4. CMake3分钟上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../2 - 操作系统_服务器与网络/4. Mac 下安装 OpenCV.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/4. Mac 下安装 OpenCV.html">
+            
+                    
+                    4. Mac 下安装 OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../2 - 操作系统_服务器与网络/软硬链接 与 Linux 文件系统.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/软硬链接 与 Linux 文件系统.html">
+            
+                    
+                    软硬链接 与 Linux 文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    3 - 环境搭建_开发效率
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../3 - 环境搭建_开发效率/2. Conda_ENV中正确使用pip Install.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Conda_ENV中正确使用pip Install.html">
+            
+                    
+                    2. Conda_ENV中正确使用pip Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../3 - 环境搭建_开发效率/2. Conda添加镜像 - 解决下载过慢.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Conda添加镜像 - 解决下载过慢.html">
+            
+                    
+                    2. Conda添加镜像 - 解决下载过慢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../3 - 环境搭建_开发效率/2. Linux 系统下 conda 的安装与使用.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Linux 系统下 conda 的安装与使用.html">
+            
+                    
+                    2. Linux 系统下 conda 的安装与使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../3 - 环境搭建_开发效率/2. Mac 必备神器 Homebrew.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Mac 必备神器 Homebrew.html">
+            
+                    
+                    2. Mac 必备神器 Homebrew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../3 - 环境搭建_开发效率/3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member.html">
+            
+                    
+                    3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../3 - 环境搭建_开发效率/介绍-Jupyter网络笔记本.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/介绍-Jupyter网络笔记本.html">
+            
+                    
+                    介绍-Jupyter网络笔记本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    4 Python API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../4 - Python_API/Language - Python.html">
+            
+                <a href="../../4 - Python_API/Language - Python.html">
+            
+                    
+                    Language Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../4 - Python_API/Lib - TensorFlow_API.html">
+            
+                <a href="../../4 - Python_API/Lib - TensorFlow_API.html">
+            
+                    
+                    Lib Tensor Flow API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../4 - Python_API/Python 中 with 用法及原理.html">
+            
+                <a href="../../4 - Python_API/Python 中 with 用法及原理.html">
+            
+                    
+                    Python 中 with 用法及原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../4 - Python_API/python 中，花括号，中括号，小括号的区别.html">
+            
+                <a href="../../4 - Python_API/python 中，花括号，中括号，小括号的区别.html">
+            
+                    
+                    python 中，花括号，中括号，小括号的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../4 - Python_API/Python 判断列表中是否存在某元素.html">
+            
+                <a href="../../4 - Python_API/Python 判断列表中是否存在某元素.html">
+            
+                    
+                    Python 判断列表中是否存在某元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../4 - Python_API/python 获取当前工作目录.html">
+            
+                <a href="../../4 - Python_API/python 获取当前工作目录.html">
+            
+                    
+                    python 获取当前工作目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../4 - Python_API/python 读写 csv 文件（创建，追加，覆盖）.html">
+            
+                <a href="../../4 - Python_API/python 读写 csv 文件（创建，追加，覆盖）.html">
+            
+                    
+                    python 读写 csv 文件（创建，追加，覆盖）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../4 - Python_API/python 路径拼接 os.path.join(">
+            
+                <span>
+            
+                    
+                    python 路径拼接 os.path.join() 函数的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../4 - Python_API/python 逐行读取文件内容的三种方法.html">
+            
+                <a href="../../4 - Python_API/python 逐行读取文件内容的三种方法.html">
+            
+                    
+                    python 逐行读取文件内容的三种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../4 - Python_API/Python3 rfind(">
+            
+                <span>
+            
+                    
+                    Python3 rfind() 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../../4 - Python_API/python读写 JSON 数据.html">
+            
+                <a href="../../4 - Python_API/python读写 JSON 数据.html">
+            
+                    
+                    python读写 JSON 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../../4 - Python_API/使用 opencv 进行简单的抠图.html">
+            
+                <a href="../../4 - Python_API/使用 opencv 进行简单的抠图.html">
+            
+                    
+                    使用 opencv 进行简单的抠图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    5 - 实验笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    Pytoch自定义类改写数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../Pytoch自定义类改写数据/Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.html">
+            
+                <a href="../Pytoch自定义类改写数据/Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.html">
+            
+                    
+                    Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="../Pytoch自定义类改写数据/PyTorch 手把手自定义 Dataloader 读取数据.html">
+            
+                <a href="../Pytoch自定义类改写数据/PyTorch 手把手自定义 Dataloader 读取数据.html">
+            
+                    
+                    PyTorch 手把手自定义 Dataloader 读取数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="../Pytoch自定义类改写数据/Pytorch 源码解读 - torchvision.datasets.folder.html">
+            
+                <a href="../Pytoch自定义类改写数据/Pytorch 源码解读 - torchvision.datasets.folder.html">
+            
+                    
+                    Pytorch 源码解读 - torchvision.datasets.folder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4" data-path="../Pytoch自定义类改写数据/torchvision自定义数据读取.html">
+            
+                <a href="../Pytoch自定义类改写数据/torchvision自定义数据读取.html">
+            
+                    
+                    torchvision自定义数据读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.5" data-path="../Pytoch自定义类改写数据/自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader.html">
+            
+                <a href="../Pytoch自定义类改写数据/自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader.html">
+            
+                    
+                    自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" >
+            
+                <span>
+            
+                    
+                    Yolo Deepsort
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../Yolo+Deepsort/【好文😭】手把手教你用 YOLOv5 训练自己的数据集.html">
+            
+                <a href="../Yolo+Deepsort/【好文😭】手把手教你用 YOLOv5 训练自己的数据集.html">
+            
+                    
+                    【好文😭】手把手教你用 YOLOv5 训练自己的数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../Yolo+Deepsort/【目标检测实战】Darknet—yolov3 模型训练（VOC 数据集">
+            
+                <span>
+            
+                    
+                    【目标检测实战】Darknet—yolov3 模型训练（VOC 数据集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../Yolo+Deepsort/DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.html">
+            
+                <a href="../Yolo+Deepsort/DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.html">
+            
+                    
+                    DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../Yolo+Deepsort/Market 1501 数据集及在 DeepSort 中的训练.html">
+            
+                <a href="../Yolo+Deepsort/Market 1501 数据集及在 DeepSort 中的训练.html">
+            
+                    
+                    Market 1501 数据集及在 DeepSort 中的训练
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="../Yolo+Deepsort/yolov5 启用数据增强与 tensorboard 可视化.html">
+            
+                <a href="../Yolo+Deepsort/yolov5 启用数据增强与 tensorboard 可视化.html">
+            
+                    
+                    yolov5 启用数据增强与 tensorboard 可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="../Yolo+Deepsort/YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集.html">
+            
+                <a href="../Yolo+Deepsort/YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集.html">
+            
+                    
+                    YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="../Yolo+Deepsort/Yolov5_DeepSort_Pytorch 训练自己的数据.html">
+            
+                <a href="../Yolo+Deepsort/Yolov5_DeepSort_Pytorch 训练自己的数据.html">
+            
+                    
+                    Yolov5_DeepSort_Pytorch 训练自己的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" >
+            
+                <span>
+            
+                    
+                    YOLO实验
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="Installing Darknet.html">
+            
+                <a href="Installing Darknet.html">
+            
+                    
+                    Installing Darknet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3.2" data-path="YOLO: Real-Time Object Detection.html">
+            
+                <a href="YOLO: Real-Time Object Detection.html">
+            
+                    
+                    YOLO Real Time Object Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.html">
+            
+                <a href="在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.html">
+            
+                    
+                    在 Linux 服务器环境下使用 yolov3 训练 voc 数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="快速开始ScaledYOLOv4-知乎.html">
+            
+                <a href="快速开始ScaledYOLOv4-知乎.html">
+            
+                    
+                    快速开始ScaledYOLOv4-知乎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="笔记 - 在服务器上用 YOLOv4 训练和测试数据集.html">
+            
+                <a href="笔记 - 在服务器上用 YOLOv4 训练和测试数据集.html">
+            
+                    
+                    笔记 - 在服务器上用 YOLOv4 训练和测试数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../🌟Pytorch 搭建 YoloV4 目标检测平台.html">
+            
+                <a href="../🌟Pytorch 搭建 YoloV4 目标检测平台.html">
+            
+                    
+                    🌟Pytorch 搭建 YoloV4 目标检测平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../yolo--- 参数解释之 cfg 文件参数.html">
+            
+                <a href="../yolo--- 参数解释之 cfg 文件参数.html">
+            
+                    
+                    yolo--- 参数解释之 cfg 文件参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    6 - 数字生活
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../6 - 数字生活/1. 深度学习图像标注工具 - Labelme.html">
+            
+                <a href="../../6 - 数字生活/1. 深度学习图像标注工具 - Labelme.html">
+            
+                    
+                    1. 深度学习图像标注工具 - Labelme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../6 - 数字生活/Kindle使用手册.html">
+            
+                <a href="../../6 - 数字生活/Kindle使用手册.html">
+            
+                    
+                    Kindle使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../6 - 数字生活/卡西欧gg1000指针调节.html">
+            
+                <a href="../../6 - 数字生活/卡西欧gg1000指针调节.html">
+            
+                    
+                    卡西欧gg1000指针调节
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >YOLO Real Time Object Detection</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#yolo---real-time-object-detection"><b>1. </b>Yolo - Real Time Object Detection</a></li><ul><li><span class="title-icon "></span><a href="#1-comparison-to-other-detectors"><b>1.1. </b>1. Comparison to Other Detectors</a></li><li><span class="title-icon "></span><a href="#2-performance-on-the-coco-dataset"><b>1.2. </b>2. Performance on the COCO Dataset</a></li><li><span class="title-icon "></span><a href="#3-how-it-works"><b>1.3. </b>3. How It Works</a></li><ul><li><span class="title-icon "></span><a href="#whats-new-in-version-3"><b>1.3.1. </b>What&apos;s New in Version 3?</a></li></ul><li><span class="title-icon "></span><a href="#4-detection-using-a-pre-trained-model"><b>1.4. </b>4. Detection Using A Pre-Trained Model</a></li><ul><li><span class="title-icon "></span><a href="#multiple-images"><b>1.4.1. </b>Multiple Images</a></li><li><span class="title-icon "></span><a href="#changing-the-detection-threshold"><b>1.4.2. </b>Changing The Detection Threshold</a></li><li><span class="title-icon "></span><a href="#tiny-yolov3"><b>1.4.3. </b>Tiny YOLOv3</a></li></ul><li><span class="title-icon "></span><a href="#5-real-time-detection-on-a-webcam-&#x7F51;&#x7EDC;&#x6444;&#x50CF;&#x5934;"><b>1.5. </b>5. Real-Time Detection on a Webcam &#x7F51;&#x7EDC;&#x6444;&#x50CF;&#x5934;</a></li><li><span class="title-icon "></span><a href="#6-training-yolo-on-voc"><b>1.6. </b>6. Training YOLO on VOC</a></li><ul><li><span class="title-icon "></span><a href="#get-the-pascal-voc-data"><b>1.6.1. </b>Get The Pascal VOC Data</a></li><li><span class="title-icon "></span><a href="#generate-labels-for-voc"><b>1.6.2. </b>Generate Labels for VOC</a></li><li><span class="title-icon "></span><a href="#modify-cfg-for-pascal-data"><b>1.6.3. </b>Modify Cfg for Pascal Data</a></li><li><span class="title-icon "></span><a href="#download-pretrained-convolutional-weights"><b>1.6.4. </b>Download Pretrained Convolutional Weights</a></li><li><span class="title-icon "></span><a href="#train-the-model"><b>1.6.5. </b>Train The Model</a></li></ul><li><span class="title-icon "></span><a href="#7-training-yolo-on-coco"><b>1.7. </b>7. Training YOLO on COCO</a></li><ul><li><span class="title-icon "></span><a href="#get-the-coco-data"><b>1.7.1. </b>Get The COCO Data</a></li><li><span class="title-icon "></span><a href="#modify-cfg-for-coco"><b>1.7.2. </b>Modify cfg for COCO</a></li><li><span class="title-icon "></span><a href="#train-the-model_1"><b>1.7.3. </b>Train The Model</a></li></ul><li><span class="title-icon "></span><a href="#8-yolov3-on-the-open-images-dataset"><b>1.8. </b>8. YOLOv3 on the Open Images dataset</a></li><li><span class="title-icon "></span><a href="#9-what-happened-to-the-old-yolo-site"><b>1.9. </b>9. What Happened to the Old YOLO Site?</a></li><li><span class="title-icon "></span><a href="#10-cite"><b>1.10. </b>10. Cite</a></li></ul></ul></div><a href="#yolo---real-time-object-detection" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="yolo---real-time-object-detection"><a name="yolo---real-time-object-detection" class="anchor-navigation-ex-anchor" href="#yolo---real-time-object-detection"><i class="fa fa-link" aria-hidden="true"></i></a>1. Yolo - Real Time Object Detection</h1>
+<blockquote>
+<p>&#x539F;&#x6587;&#x5730;&#x5740;  <a href="https://pjreddie.com/darknet/yolo/" target="_blank">pjreddie.com</a></p>
+</blockquote>
+<p><img src="https://pjreddie.com/media/image/yologo_2.png" alt=""></p>
+<p>You only look once (YOLO) is a state-of-the-art, real-time object detection system. On a Pascal Titan X it processes images at 30 FPS and has a mAP of 57.9% on COCO test-dev.</p>
+<h2 id="1-comparison-to-other-detectors"><a name="1-comparison-to-other-detectors" class="anchor-navigation-ex-anchor" href="#1-comparison-to-other-detectors"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 1. Comparison to Other Detectors</h2>
+<p>YOLOv3 is extremely fast and accurate. In mAP measured at .5 IOU YOLOv3 is on par with Focal Loss but about 4x faster. Moreover, you can easily tradeoff between speed and accuracy simply by changing the size of the model, no retraining required!</p>
+<p><img src="https://pjreddie.com/media/image/map50blue.png" alt=""></p>
+<h2 id="2-performance-on-the-coco-dataset"><a name="2-performance-on-the-coco-dataset" class="anchor-navigation-ex-anchor" href="#2-performance-on-the-coco-dataset"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. 2. Performance on the COCO Dataset</h2>
+<table><tbody><tr><th>Model</th><th>Train</th><th>Test</th><th>mAP</th><th>FLOPS</th><th>FPS</th><th>Cfg</th><th>Weights</th></tr><tr><td>SSD300</td><td>COCO trainval</td><td>test-dev</td><td>41.2</td><td>-</td><td>46</td><td colspan="2"><a href="https://arxiv.org/abs/1512.02325" target="_blank">link</a></td></tr><tr><td>SSD500</td><td>COCO trainval</td><td>test-dev</td><td>46.5</td><td>-</td><td>19</td><td colspan="2"><a href="https://arxiv.org/abs/1512.02325" target="_blank">link</a></td></tr><tr><td>YOLOv2 608x608</td><td>COCO trainval</td><td>test-dev</td><td>48.1</td><td>62.94 Bn</td><td>40</td><td><a href="https://github.com/pjreddie/darknet/blob/master/cfg/yolov2.cfg" target="_blank">cfg</a></td><td><a href="https://pjreddie.com/media/files/yolov2.weights" target="_blank">weights</a></td></tr><tr><td>Tiny YOLO</td><td>COCO trainval</td><td>test-dev</td><td>23.7</td><td>5.41 Bn</td><td>244</td><td><a href="https://github.com/pjreddie/darknet/blob/master/cfg/yolov2-tiny.cfg" target="_blank">cfg</a></td><td><a href="https://pjreddie.com/media/files/yolov2-tiny.weights" target="_blank">weights</a></td></tr><tr><td colspan="8"><hr class="simpread-hidden"></td></tr><tr><td>SSD321</td><td>COCO trainval</td><td>test-dev</td><td>45.4</td><td>-</td><td>16</td><td colspan="2"><a href="https://arxiv.org/abs/1701.06659" target="_blank">link</a></td></tr><tr><td>DSSD321</td><td>COCO trainval</td><td>test-dev</td><td>46.1</td><td>-</td><td>12</td><td colspan="2"><a href="https://arxiv.org/abs/1701.06659" target="_blank">link</a></td></tr><tr><td>R-FCN</td><td>COCO trainval</td><td>test-dev</td><td>51.9</td><td>-</td><td>12</td><td colspan="2"><a href="https://arxiv.org/abs/1605.06409" target="_blank">link</a></td></tr><tr><td>SSD513</td><td>COCO trainval</td><td>test-dev</td><td>50.4</td><td>-</td><td>8</td><td colspan="2"><a href="https://arxiv.org/abs/1701.06659" target="_blank">link</a></td></tr><tr><td>DSSD513</td><td>COCO trainval</td><td>test-dev</td><td>53.3</td><td>-</td><td>6</td><td colspan="2"><a href="https://arxiv.org/abs/1701.06659" target="_blank">link</a></td></tr><tr><td>FPN FRCN</td><td>COCO trainval</td><td>test-dev</td><td>59.1</td><td>-</td><td>6</td><td colspan="2"><a href="https://arxiv.org/abs/1612.03144" target="_blank">link</a></td></tr><tr><td>Retinanet-50-500</td><td>COCO trainval</td><td>test-dev</td><td>50.9</td><td>-</td><td>14</td><td colspan="2"><a https:="" arxiv.org="" abs="" 1708.02002="">link</a></td></tr><tr><td>Retinanet-101-500</td><td>COCO trainval</td><td>test-dev</td><td>53.1</td><td>-</td><td>11</td><td colspan="2"><a https:="" arxiv.org="" abs="" 1708.02002="">link</a></td></tr><tr><td>Retinanet-101-800</td><td>COCO trainval</td><td>test-dev</td><td>57.5</td><td>-</td><td>5</td><td colspan="2"><a https:="" arxiv.org="" abs="" 1708.02002="">link</a></td></tr><tr><td>YOLOv3-320</td><td>COCO trainval</td><td>test-dev</td><td>51.5</td><td>38.97 Bn</td><td>45</td><td><a href="https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg" target="_blank">cfg</a></td><td><a href="https://pjreddie.com/media/files/yolov3.weights" target="_blank">weights</a></td></tr><tr><td>YOLOv3-416</td><td>COCO trainval</td><td>test-dev</td><td>55.3</td><td>65.86 Bn</td><td>35</td><td><a href="https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg" target="_blank">cfg</a></td><td><a href="https://pjreddie.com/media/files/yolov3.weights" target="_blank">weights</a></td></tr><tr><td>YOLOv3-608</td><td>COCO trainval</td><td>test-dev</td><td>57.9</td><td>140.69 Bn</td><td>20</td><td><a href="https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg" target="_blank">cfg</a></td><td><a href="https://pjreddie.com/media/files/yolov3.weights" target="_blank">weights</a></td></tr><tr><td>YOLOv3-tiny</td><td>COCO trainval</td><td>test-dev</td><td>33.1</td><td>5.56 Bn</td><td>220</td><td><a href="https://github.com/pjreddie/darknet/blob/master/cfg/yolov3-tiny.cfg" target="_blank">cfg</a></td><td><a href="https://pjreddie.com/media/files/yolov3-tiny.weights" target="_blank">weights</a></td></tr><tr><td>YOLOv3-spp</td><td>COCO trainval</td><td>test-dev</td><td>60.6</td><td>141.45 Bn</td><td>20</td><td><a href="https://github.com/pjreddie/darknet/blob/master/cfg/yolov3-spp.cfg" target="_blank">cfg</a></td><td><a href="https://pjreddie.com/media/files/yolov3-spp.weights" target="_blank">weights</a></td></tr></tbody></table>
+
+<h2 id="3-how-it-works"><a name="3-how-it-works" class="anchor-navigation-ex-anchor" href="#3-how-it-works"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. 3. How It Works</h2>
+<p>Prior detection systems repurpose classifiers or localizers to perform detection. They apply the model to an image at multiple locations and scales. High scoring regions of the image are considered detections.</p>
+<p>We use a totally different approach. We apply a single neural network to the full image. This network divides the image into regions and predicts bounding boxes and probabilities for each region. These bounding boxes are weighted by the predicted probabilities.</p>
+<p><img src="https://pjreddie.com/media/image/sayit.jpg" alt=""></p>
+<p>Our model has several advantages over classifier-based systems. It looks at the whole image at test time so its predictions are informed by global context in the image. It also makes predictions with a single network evaluation unlike systems like <a href="https://github.com/rbgirshick/rcnn" target="_blank">R-CNN</a> which require thousands for a single image. This makes it extremely fast, more than 1000x faster than R-CNN and 100x faster than <a href="https://github.com/rbgirshick/fast-rcnn" target="_blank">Fast R-CNN</a>. See our <a href="https://pjreddie.com/media/files/papers/YOLOv3.pdf" target="_blank">paper</a> for more details on the full system.</p>
+<h3 id="whats-new-in-version-3"><a name="whats-new-in-version-3" class="anchor-navigation-ex-anchor" href="#whats-new-in-version-3"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. What&apos;s New in Version 3?</h3>
+<p>YOLOv3 uses a few tricks to improve training and increase performance, including: multi-scale predictions, a better backbone classifier, and more. The full details are in our <a href="https://pjreddie.com/media/files/papers/YOLOv3.pdf" target="_blank">paper</a>!</p>
+<h2 id="4-detection-using-a-pre-trained-model"><a name="4-detection-using-a-pre-trained-model" class="anchor-navigation-ex-anchor" href="#4-detection-using-a-pre-trained-model"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. 4. Detection Using A Pre-Trained Model</h2>
+<p>This post will guide you through detecting objects with the YOLO system using a pre-trained model. If you don&apos;t already have Darknet installed, you should <a href="https://pjreddie.com/darknet/install/" target="_blank">do that first</a>. Or instead of reading all that just run:</p>
+<pre><code>git clone https://github.com/pjreddie/darknet
+cd darknet
+make
+</code></pre><p>Easy!</p>
+<p>You already have the config file for YOLO in the <code>cfg/</code> subdirectory. You will have to download the pre-trained weight file <a href="https://pjreddie.com/media/files/yolov3.weights" target="_blank">here (237 MB)</a>. Or just run this:</p>
+<pre><code>wget https://pjreddie.com/media/files/yolov3.weights
+</code></pre><p>Then run the detector!</p>
+<pre><code>./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
+</code></pre><p>You will see some output like this:</p>
+<pre><code>layer     filters    size              input                output
+    0 conv     32  3 x 3 / 1   416 x 416 x   3   -&gt;   416 x 416 x  32  0.299 BFLOPs
+    1 conv     64  3 x 3 / 2   416 x 416 x  32   -&gt;   208 x 208 x  64  1.595 BFLOPs
+    .......
+  105 conv    255  1 x 1 / 1    52 x  52 x 256   -&gt;    52 x  52 x 255  0.353 BFLOPs
+  106 detection
+truth_thresh: Using default &apos;1.000000&apos;
+Loading weights from yolov3.weights...Done!
+data/dog.jpg: Predicted in 0.029329 seconds.
+dog: 99%
+truck: 93%
+bicycle: 99%
+</code></pre><p><img src="https://pjreddie.com/media/image/Screen_Shot_2018-03-24_at_10.48.42_PM.png" alt=""></p>
+<p>Darknet prints out the objects it detected, its confidence, and how long it took to find them. We didn&apos;t compile Darknet with <code>OpenCV</code> so it can&apos;t display the detections directly. Instead, it saves them in <code>predictions.png</code>. You can open it to see the detected objects. Since we are using Darknet on the CPU it takes around 6-12 seconds per image. If we use the GPU version it would be much faster.</p>
+<p>I&apos;ve included some example images to try in case you need inspiration. Try <code>data/eagle.jpg</code>, <code>data/dog.jpg</code>, <code>data/person.jpg</code>, or <code>data/horses.jpg</code>!</p>
+<p>The <code>detect</code> command is shorthand for a more general version of the command. It is equivalent to the command:</p>
+<pre><code>./darknet detector test cfg/coco.data cfg/yolov3.cfg yolov3.weights data/dog.jpg
+</code></pre><p>You don&apos;t need to know this if all you want to do is run detection on one image but it&apos;s useful to know if you want to do other things like run on a webcam (which you will see <a href="#demo">later on</a>).</p>
+<h3 id="multiple-images"><a name="multiple-images" class="anchor-navigation-ex-anchor" href="#multiple-images"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. Multiple Images</h3>
+<p>Instead of supplying an image on the command line, you can leave it blank to try multiple images in a row. Instead you will see a prompt when the config and weights are done loading:</p>
+<pre><code>./darknet detect cfg/yolov3.cfg yolov3.weights
+layer     filters    size              input                output
+    0 conv     32  3 x 3 / 1   416 x 416 x   3   -&gt;   416 x 416 x  32  0.299 BFLOPs
+    1 conv     64  3 x 3 / 2   416 x 416 x  32   -&gt;   208 x 208 x  64  1.595 BFLOPs
+    .......
+  104 conv    256  3 x 3 / 1    52 x  52 x 128   -&gt;    52 x  52 x 256  1.595 BFLOPs
+  105 conv    255  1 x 1 / 1    52 x  52 x 256   -&gt;    52 x  52 x 255  0.353 BFLOPs
+  106 detection
+Loading weights from yolov3.weights...Done!
+Enter Image Path:
+</code></pre><p>Enter an image path like <code>data/horses.jpg</code> to have it predict boxes for that image.</p>
+<p><img src="https://pjreddie.com/media/image/Screen_Shot_2018-03-24_at_10.53.04_PM.png" alt=""></p>
+<p>Once it is done it will prompt you for more paths to try different images. Use <code>Ctrl-C</code> to exit the program once you are done.</p>
+<h3 id="changing-the-detection-threshold"><a name="changing-the-detection-threshold" class="anchor-navigation-ex-anchor" href="#changing-the-detection-threshold"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. Changing The Detection Threshold</h3>
+<p>By default, YOLO only displays objects detected with a confidence of .25 or higher. You can change this by passing the <code>-thresh &lt;val&gt;</code> flag to the <code>yolo</code> command. For example, to display all detection you can set the threshold to 0:</p>
+<pre><code>./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg -thresh 0
+</code></pre><p>Which produces:</p>
+<p>![][all]</p>
+<p>So that&apos;s obviously not super useful but you can set it to different values to control what gets thresholded by the model.</p>
+<h3 id="tiny-yolov3"><a name="tiny-yolov3" class="anchor-navigation-ex-anchor" href="#tiny-yolov3"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. Tiny YOLOv3</h3>
+<p>We have a very small model as well for constrained environments, <code>yolov3-tiny</code>. To use this model, first download the weights:</p>
+<pre><code>wget https://pjreddie.com/media/files/yolov3-tiny.weights
+</code></pre><p>Then run the detector with the tiny config file and weights:</p>
+<pre><code>./darknet detect cfg/yolov3-tiny.cfg yolov3-tiny.weights data/dog.jpg
+</code></pre><h2 id="5-real-time-detection-on-a-webcam-&#x7F51;&#x7EDC;&#x6444;&#x50CF;&#x5934;"><a name="5-real-time-detection-on-a-webcam-&#x7F51;&#x7EDC;&#x6444;&#x50CF;&#x5934;" class="anchor-navigation-ex-anchor" href="#5-real-time-detection-on-a-webcam-&#x7F51;&#x7EDC;&#x6444;&#x50CF;&#x5934;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. 5. Real-Time Detection on a Webcam &#x7F51;&#x7EDC;&#x6444;&#x50CF;&#x5934;</h2>
+<p>Running YOLO on test data isn&apos;t very interesting if you can&apos;t see the result. Instead of running it on a bunch of images let&apos;s run it on the input from a webcam!</p>
+<p>To run this demo you will need to compile <a href="https://pjreddie.com/darknet/install/#cuda" target="_blank">Darknet with CUDA and OpenCV</a>. Then run the command:</p>
+<pre><code>./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights
+</code></pre><p>YOLO will display the current FPS and predicted classes as well as the image with bounding boxes drawn on top of it.</p>
+<p>You will need a webcam connected to the computer that OpenCV can connect to or it won&apos;t work. If you have multiple webcams connected and want to select which one to use you can pass the flag <code>-c &lt;num&gt;</code> to pick (OpenCV uses webcam <code>0</code> by default).</p>
+<p>You can also run it on a video file if OpenCV can read the video:</p>
+<pre><code>./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights &lt;video file&gt;
+</code></pre><p>That&apos;s how we made the YouTube video above.</p>
+<h2 id="6-training-yolo-on-voc"><a name="6-training-yolo-on-voc" class="anchor-navigation-ex-anchor" href="#6-training-yolo-on-voc"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. 6. Training YOLO on VOC</h2>
+<p>You can train YOLO from scratch if you want to play with different training regimes, hyper-parameters, or datasets. Here&apos;s how to get it working on the Pascal VOC dataset.</p>
+<h3 id="get-the-pascal-voc-data"><a name="get-the-pascal-voc-data" class="anchor-navigation-ex-anchor" href="#get-the-pascal-voc-data"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. Get The Pascal VOC Data</h3>
+<p>To train YOLO you will need all of the VOC data from 2007 to 2012. You can find links to the data <a href="https://pjreddie.com/projects/pascal-voc-dataset-mirror/" target="_blank">here</a>. To get all the data, make a directory to store it all and from that directory run:</p>
+<pre><code>wget https://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
+wget https://pjreddie.com/media/files/VOCtrainval_06-Nov-2007.tar
+wget https://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar
+tar xf VOCtrainval_11-May-2012.tar
+tar xf VOCtrainval_06-Nov-2007.tar
+tar xf VOCtest_06-Nov-2007.tar
+</code></pre><p>There will now be a <code>VOCdevkit/</code> subdirectory with all the VOC training data in it.</p>
+<h3 id="generate-labels-for-voc"><a name="generate-labels-for-voc" class="anchor-navigation-ex-anchor" href="#generate-labels-for-voc"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. Generate Labels for VOC</h3>
+<p>Now we need to generate the label files that Darknet uses. Darknet wants a <code>.txt</code> file for each image with a line for each ground truth object in the image that looks like:</p>
+<pre><code>&lt;object-class&gt; &lt;x&gt; &lt;y&gt; &lt;width&gt; &lt;height&gt;
+</code></pre><p>Where <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code> are relative to the image&apos;s width and height. To generate these file we will run the <code>voc_label.py</code> script in Darknet&apos;s <code>scripts/</code> directory. Let&apos;s just download it again because we are lazy.</p>
+<pre><code>wget https://pjreddie.com/media/files/voc_label.py
+python voc_label.py
+</code></pre><p>After a few minutes, this script will generate all of the requisite files. Mostly it generates a lot of label files in <code>VOCdevkit/VOC2007/labels/</code> and <code>VOCdevkit/VOC2012/labels/</code>. In your directory you should see:</p>
+<pre><code>ls
+2007_test.txt   VOCdevkit
+2007_train.txt  voc_label.py
+2007_val.txt    VOCtest_06-Nov-2007.tar
+2012_train.txt  VOCtrainval_06-Nov-2007.tar
+2012_val.txt    VOCtrainval_11-May-2012.tar
+</code></pre><p>The text files like <code>2007_train.txt</code> list the image files for that year and image set. Darknet needs one text file with all of the images you want to train on. In this example, let&apos;s train with everything except the 2007 test set so that we can test our model. Run:</p>
+<pre><code>cat 2007_train.txt 2007_val.txt 2012_*.txt &gt; train.txt
+</code></pre><p>Now we have all the 2007 trainval and the 2012 trainval set in one big list. That&apos;s all we have to do for data setup!</p>
+<h3 id="modify-cfg-for-pascal-data"><a name="modify-cfg-for-pascal-data" class="anchor-navigation-ex-anchor" href="#modify-cfg-for-pascal-data"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.3. Modify Cfg for Pascal Data</h3>
+<p>Now go to your Darknet directory. We have to change the <code>cfg/voc.data</code> config file to point to your data:</p>
+<pre><code>1 classes= 20
+  2 train  = &lt;path-to-voc&gt;/train.txt
+  3 valid  = &lt;path-to-voc&gt;2007_test.txt
+  4 names = data/voc.names
+  5 backup = backup
+</code></pre><p>You should replace <code>&lt;path-to-voc&gt;</code> with the directory where you put the VOC data.</p>
+<h3 id="download-pretrained-convolutional-weights"><a name="download-pretrained-convolutional-weights" class="anchor-navigation-ex-anchor" href="#download-pretrained-convolutional-weights"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.4. Download Pretrained Convolutional Weights</h3>
+<p>For training we use convolutional weights that are pre-trained on Imagenet. We use weights from the <a href="https://pjreddie.com/darknet/imagenet/#darknet53" target="_blank">darknet53</a> model. You can just download the weights for the convolutional layers <a href="https://pjreddie.com/media/files/darknet53.conv.74" target="_blank">here (76 MB)</a>.</p>
+<pre><code>wget https://pjreddie.com/media/files/darknet53.conv.74
+</code></pre><h3 id="train-the-model"><a name="train-the-model" class="anchor-navigation-ex-anchor" href="#train-the-model"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.5. Train The Model</h3>
+<p>Now we can train! Run the command:</p>
+<pre><code>./darknet detector train cfg/voc.data cfg/yolov3-voc.cfg darknet53.conv.74
+</code></pre><h2 id="7-training-yolo-on-coco"><a name="7-training-yolo-on-coco" class="anchor-navigation-ex-anchor" href="#7-training-yolo-on-coco"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. 7. Training YOLO on COCO</h2>
+<p>You can train YOLO from scratch if you want to play with different training regimes, hyper-parameters, or datasets. Here&apos;s how to get it working on the <a href="http://mscoco.org/dataset/#overview" target="_blank">COCO dataset</a>.</p>
+<h3 id="get-the-coco-data"><a name="get-the-coco-data" class="anchor-navigation-ex-anchor" href="#get-the-coco-data"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.1. Get The COCO Data</h3>
+<p>To train YOLO you will need all of the COCO data and labels. The script <code>scripts/get_coco_dataset.sh</code> will do this for you. Figure out where you want to put the COCO data and download it, for example:</p>
+<pre><code>cp scripts/get_coco_dataset.sh data
+cd data
+bash get_coco_dataset.sh
+</code></pre><p>Now you should have all the data and the labels generated for Darknet.</p>
+<h3 id="modify-cfg-for-coco"><a name="modify-cfg-for-coco" class="anchor-navigation-ex-anchor" href="#modify-cfg-for-coco"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.2. Modify cfg for COCO</h3>
+<p>Now go to your Darknet directory. We have to change the <code>cfg/coco.data</code> config file to point to your data:</p>
+<pre><code>1 classes= 80
+  2 train  = &lt;path-to-coco&gt;/trainvalno5k.txt
+  3 valid  = &lt;path-to-coco&gt;/5k.txt
+  4 names = data/coco.names
+  5 backup = backup
+</code></pre><p>You should replace <code>&lt;path-to-coco&gt;</code> with the directory where you put the COCO data.</p>
+<p>You should also modify your model cfg for training instead of testing. <code>cfg/yolo.cfg</code> should look like this:</p>
+<pre><code>[net]
+# Testing
+# batch=1
+# subdivisions=1
+# Training
+batch=64
+subdivisions=8
+....
+</code></pre><h3 id="train-the-model_1"><a name="train-the-model_1" class="anchor-navigation-ex-anchor" href="#train-the-model_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.3. Train The Model</h3>
+<p>Now we can train! Run the command:</p>
+<pre><code>./darknet detector train cfg/coco.data cfg/yolov3.cfg darknet53.conv.74
+</code></pre><p>If you want to use multiple gpus run:</p>
+<pre><code>./darknet detector train cfg/coco.data cfg/yolov3.cfg darknet53.conv.74 -gpus 0,1,2,3
+</code></pre><p>If you want to stop and restart training from a checkpoint:</p>
+<pre><code>./darknet detector train cfg/coco.data cfg/yolov3.cfg backup/yolov3.backup -gpus 0,1,2,3
+</code></pre><h2 id="8-yolov3-on-the-open-images-dataset"><a name="8-yolov3-on-the-open-images-dataset" class="anchor-navigation-ex-anchor" href="#8-yolov3-on-the-open-images-dataset"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. 8. YOLOv3 on the Open Images dataset</h2>
+<pre><code>wget https://pjreddie.com/media/files/yolov3-openimages.weights
+
+./darknet detector test cfg/openimages.data cfg/yolov3-openimages.cfg yolov3-openimages.weights
+</code></pre><h2 id="9-what-happened-to-the-old-yolo-site"><a name="9-what-happened-to-the-old-yolo-site" class="anchor-navigation-ex-anchor" href="#9-what-happened-to-the-old-yolo-site"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. 9. What Happened to the Old YOLO Site?</h2>
+<p>If you are using YOLO version 2 you can still find the site here: <a href="https://pjreddie.com/darknet/yolov2/" target="_blank">https://pjreddie.com/darknet/yolov2/</a></p>
+<h2 id="10-cite"><a name="10-cite" class="anchor-navigation-ex-anchor" href="#10-cite"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. 10. Cite</h2>
+<p>If you use YOLOv3 in your work please cite our paper!</p>
+<pre><code>@article{yolov3,
+  title={YOLOv3: An Incremental Improvement},
+  author={Redmon, Joseph and Farhadi, Ali},
+  journal = {arXiv},
+  year={2018}
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Installing Darknet.html" class="navigation navigation-prev " aria-label="Previous page: Installing Darknet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.html" class="navigation navigation-next " aria-label="Next page: 在 Linux 服务器环境下使用 yolov3 训练 voc 数据集">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"YOLO Real Time Object Detection","level":"1.7.3.2","depth":3,"next":{"title":"在 Linux 服务器环境下使用 yolov3 训练 voc 数据集","level":"1.7.3.3","depth":3,"path":"5 - 实验笔记/YOLO实验/在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.md","ref":"5 - 实验笔记/YOLO实验/在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.md","articles":[]},"previous":{"title":"Installing Darknet","level":"1.7.3.1","depth":3,"path":"5 - 实验笔记/YOLO实验/Installing Darknet.md","ref":"5 - 实验笔记/YOLO实验/Installing Darknet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","github-buttons","copy-code-button","anchor-navigation-ex","-highlight","-lunr","-search","search-pro","splitter"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Summary","gitbook":"*"},"file":{"path":"5 - 实验笔记/YOLO实验/YOLO: Real-Time Object Detection.md","mtime":"2021-08-03T09:22:20.858Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-03T09:23:02.254Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

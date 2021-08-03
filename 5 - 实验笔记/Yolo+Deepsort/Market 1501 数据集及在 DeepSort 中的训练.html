@@ -1,0 +1,1396 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Market 1501 数据集及在 DeepSort 中的训练 · Summary</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="yolov5 启用数据增强与 tensorboard 可视化.html" />
+    
+    
+    <link rel="prev" href="DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    0 - 快速使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../0 - 快速使用/3 分钟快速配置 Git.html">
+            
+                <a href="../../0 - 快速使用/3 分钟快速配置 Git.html">
+            
+                    
+                    3 分钟快速配置 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../0 - 快速使用/Conda 常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/Conda 常用命令整理.html">
+            
+                    
+                    Conda 常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../0 - 快速使用/Linux&Shell常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/Linux&Shell常用命令整理.html">
+            
+                    
+                    Linux&Shell常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../0 - 快速使用/MacOS常用命令整理.html">
+            
+                <a href="../../0 - 快速使用/MacOS常用命令整理.html">
+            
+                    
+                    MacOS常用命令整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../0 - 快速使用/Pycharm.html">
+            
+                <a href="../../0 - 快速使用/Pycharm.html">
+            
+                    
+                    Pycharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../0 - 快速使用/VSCODE常用快捷键整理.html">
+            
+                <a href="../../0 - 快速使用/VSCODE常用快捷键整理.html">
+            
+                    
+                    VSCODE常用快捷键整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../0 - 快速使用/XCODE常用快捷键整理.html">
+            
+                <a href="../../0 - 快速使用/XCODE常用快捷键整理.html">
+            
+                    
+                    XCODE常用快捷键整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    1 Git Github
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../1 - Git_Github/1. Github添加公钥.html">
+            
+                <a href="../../1 - Git_Github/1. Github添加公钥.html">
+            
+                    
+                    1. Github添加公钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../1 - Git_Github/2. 关于git clone.html">
+            
+                <a href="../../1 - Git_Github/2. 关于git clone.html">
+            
+                    
+                    2. 关于git clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../1 - Git_Github/3. 关于.gitconfig.html">
+            
+                <a href="../../1 - Git_Github/3. 关于.gitconfig.html">
+            
+                    
+                    3. 关于.gitconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../1 - Git_Github/4. 关于.gitignore.html">
+            
+                <a href="../../1 - Git_Github/4. 关于.gitignore.html">
+            
+                    
+                    4. 关于.gitignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../1 - Git_Github/5. 下载github特定子文件夹.html">
+            
+                <a href="../../1 - Git_Github/5. 下载github特定子文件夹.html">
+            
+                    
+                    5. 下载github特定子文件夹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../1 - Git_Github/6. git branch.html">
+            
+                <a href="../../1 - Git_Github/6. git branch.html">
+            
+                    
+                    6. git branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../1 - Git_Github/7. git fetch & pull 详解.html">
+            
+                <a href="../../1 - Git_Github/7. git fetch & pull 详解.html">
+            
+                    
+                    7. git fetch & pull 详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../1 - Git_Github/8. Gitbook与GitPages.html">
+            
+                <a href="../../1 - Git_Github/8. Gitbook与GitPages.html">
+            
+                    
+                    8. Gitbook与GitPages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../1 - Git_Github/报错 - Failed to connect to localhost port 1080: Connection refused.html">
+            
+                <a href="../../1 - Git_Github/报错 - Failed to connect to localhost port 1080: Connection refused.html">
+            
+                    
+                    报错 - Failed to connect to localhost port 1080: Connection refused
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    2 - 操作系统_服务器与网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../2 - 操作系统_服务器与网络/1. Download Ubuntu 镜像文件.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. Download Ubuntu 镜像文件.html">
+            
+                    
+                    1. Download Ubuntu 镜像文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../2 - 操作系统_服务器与网络/1. Ubuntu下的翻墙攻略.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. Ubuntu下的翻墙攻略.html">
+            
+                    
+                    1. Ubuntu下的翻墙攻略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../2 - 操作系统_服务器与网络/1. 免疫挂断：nohup 和 & .html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/1. 免疫挂断：nohup 和 & .html">
+            
+                    
+                    1. 免疫挂断：nohup 和 & 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../2 - 操作系统_服务器与网络/3. NATAPP 将内网映射到外网.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. NATAPP 将内网映射到外网.html">
+            
+                    
+                    3. NATAPP 将内网映射到外网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../2 - 操作系统_服务器与网络/3. 实验室主机联网奇怪经历.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 实验室主机联网奇怪经历.html">
+            
+                    
+                    3. 实验室主机联网奇怪经历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../2 - 操作系统_服务器与网络/3. 服务器与MacOS之间的SFTP.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 服务器与MacOS之间的SFTP.html">
+            
+                    
+                    3. 服务器与MacOS之间的SFTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../2 - 操作系统_服务器与网络/3. 远程连接服务器 - Natapp内网穿透服务器.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/3. 远程连接服务器 - Natapp内网穿透服务器.html">
+            
+                    
+                    3. 远程连接服务器 - Natapp内网穿透服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../2 - 操作系统_服务器与网络/4. CMake3分钟上手.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/4. CMake3分钟上手.html">
+            
+                    
+                    4. CMake3分钟上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../2 - 操作系统_服务器与网络/4. Mac 下安装 OpenCV.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/4. Mac 下安装 OpenCV.html">
+            
+                    
+                    4. Mac 下安装 OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../2 - 操作系统_服务器与网络/软硬链接 与 Linux 文件系统.html">
+            
+                <a href="../../2 - 操作系统_服务器与网络/软硬链接 与 Linux 文件系统.html">
+            
+                    
+                    软硬链接 与 Linux 文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    3 - 环境搭建_开发效率
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../3 - 环境搭建_开发效率/2. Conda_ENV中正确使用pip Install.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Conda_ENV中正确使用pip Install.html">
+            
+                    
+                    2. Conda_ENV中正确使用pip Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../3 - 环境搭建_开发效率/2. Conda添加镜像 - 解决下载过慢.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Conda添加镜像 - 解决下载过慢.html">
+            
+                    
+                    2. Conda添加镜像 - 解决下载过慢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../3 - 环境搭建_开发效率/2. Linux 系统下 conda 的安装与使用.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Linux 系统下 conda 的安装与使用.html">
+            
+                    
+                    2. Linux 系统下 conda 的安装与使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../3 - 环境搭建_开发效率/2. Mac 必备神器 Homebrew.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/2. Mac 必备神器 Homebrew.html">
+            
+                    
+                    2. Mac 必备神器 Homebrew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../3 - 环境搭建_开发效率/3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member.html">
+            
+                    
+                    3. VSCODE - 解决 vscode 中使用 pytorch 时 pylint 报错 Module torch has no xxx member
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../3 - 环境搭建_开发效率/介绍-Jupyter网络笔记本.html">
+            
+                <a href="../../3 - 环境搭建_开发效率/介绍-Jupyter网络笔记本.html">
+            
+                    
+                    介绍-Jupyter网络笔记本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    4 Python API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../4 - Python_API/Language - Python.html">
+            
+                <a href="../../4 - Python_API/Language - Python.html">
+            
+                    
+                    Language Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../4 - Python_API/Lib - TensorFlow_API.html">
+            
+                <a href="../../4 - Python_API/Lib - TensorFlow_API.html">
+            
+                    
+                    Lib Tensor Flow API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../4 - Python_API/Python 中 with 用法及原理.html">
+            
+                <a href="../../4 - Python_API/Python 中 with 用法及原理.html">
+            
+                    
+                    Python 中 with 用法及原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../4 - Python_API/python 中，花括号，中括号，小括号的区别.html">
+            
+                <a href="../../4 - Python_API/python 中，花括号，中括号，小括号的区别.html">
+            
+                    
+                    python 中，花括号，中括号，小括号的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../4 - Python_API/Python 判断列表中是否存在某元素.html">
+            
+                <a href="../../4 - Python_API/Python 判断列表中是否存在某元素.html">
+            
+                    
+                    Python 判断列表中是否存在某元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../4 - Python_API/python 获取当前工作目录.html">
+            
+                <a href="../../4 - Python_API/python 获取当前工作目录.html">
+            
+                    
+                    python 获取当前工作目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../4 - Python_API/python 读写 csv 文件（创建，追加，覆盖）.html">
+            
+                <a href="../../4 - Python_API/python 读写 csv 文件（创建，追加，覆盖）.html">
+            
+                    
+                    python 读写 csv 文件（创建，追加，覆盖）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../4 - Python_API/python 路径拼接 os.path.join(">
+            
+                <span>
+            
+                    
+                    python 路径拼接 os.path.join() 函数的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../4 - Python_API/python 逐行读取文件内容的三种方法.html">
+            
+                <a href="../../4 - Python_API/python 逐行读取文件内容的三种方法.html">
+            
+                    
+                    python 逐行读取文件内容的三种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../4 - Python_API/Python3 rfind(">
+            
+                <span>
+            
+                    
+                    Python3 rfind() 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../../4 - Python_API/python读写 JSON 数据.html">
+            
+                <a href="../../4 - Python_API/python读写 JSON 数据.html">
+            
+                    
+                    python读写 JSON 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../../4 - Python_API/使用 opencv 进行简单的抠图.html">
+            
+                <a href="../../4 - Python_API/使用 opencv 进行简单的抠图.html">
+            
+                    
+                    使用 opencv 进行简单的抠图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    5 - 实验笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    Pytoch自定义类改写数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../Pytoch自定义类改写数据/Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.html">
+            
+                <a href="../Pytoch自定义类改写数据/Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation.html">
+            
+                    
+                    Datasets & Dataloaders — PyTorch Tutorials 1.8.1+cu102 documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="../Pytoch自定义类改写数据/PyTorch 手把手自定义 Dataloader 读取数据.html">
+            
+                <a href="../Pytoch自定义类改写数据/PyTorch 手把手自定义 Dataloader 读取数据.html">
+            
+                    
+                    PyTorch 手把手自定义 Dataloader 读取数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="../Pytoch自定义类改写数据/Pytorch 源码解读 - torchvision.datasets.folder.html">
+            
+                <a href="../Pytoch自定义类改写数据/Pytorch 源码解读 - torchvision.datasets.folder.html">
+            
+                    
+                    Pytorch 源码解读 - torchvision.datasets.folder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4" data-path="../Pytoch自定义类改写数据/torchvision自定义数据读取.html">
+            
+                <a href="../Pytoch自定义类改写数据/torchvision自定义数据读取.html">
+            
+                    
+                    torchvision自定义数据读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.5" data-path="../Pytoch自定义类改写数据/自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader.html">
+            
+                <a href="../Pytoch自定义类改写数据/自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader.html">
+            
+                    
+                    自定义数据读取方式 orch.utils.data.Dataset 与 Dataloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" >
+            
+                <span>
+            
+                    
+                    Yolo Deepsort
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="【好文😭】手把手教你用 YOLOv5 训练自己的数据集.html">
+            
+                <a href="【好文😭】手把手教你用 YOLOv5 训练自己的数据集.html">
+            
+                    
+                    【好文😭】手把手教你用 YOLOv5 训练自己的数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="【目标检测实战】Darknet—yolov3 模型训练（VOC 数据集">
+            
+                <span>
+            
+                    
+                    【目标检测实战】Darknet—yolov3 模型训练（VOC 数据集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.html">
+            
+                <a href="DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.html">
+            
+                    
+                    DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2.4" data-path="Market 1501 数据集及在 DeepSort 中的训练.html">
+            
+                <a href="Market 1501 数据集及在 DeepSort 中的训练.html">
+            
+                    
+                    Market 1501 数据集及在 DeepSort 中的训练
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="yolov5 启用数据增强与 tensorboard 可视化.html">
+            
+                <a href="yolov5 启用数据增强与 tensorboard 可视化.html">
+            
+                    
+                    yolov5 启用数据增强与 tensorboard 可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集.html">
+            
+                <a href="YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集.html">
+            
+                    
+                    YOLOv5 的详细使用教程，以及使用 yolov5 训练自己的数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="Yolov5_DeepSort_Pytorch 训练自己的数据.html">
+            
+                <a href="Yolov5_DeepSort_Pytorch 训练自己的数据.html">
+            
+                    
+                    Yolov5_DeepSort_Pytorch 训练自己的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" >
+            
+                <span>
+            
+                    
+                    YOLO实验
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../YOLO实验/Installing Darknet.html">
+            
+                <a href="../YOLO实验/Installing Darknet.html">
+            
+                    
+                    Installing Darknet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../YOLO实验/YOLO: Real-Time Object Detection.html">
+            
+                <a href="../YOLO实验/YOLO: Real-Time Object Detection.html">
+            
+                    
+                    YOLO Real Time Object Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="../YOLO实验/在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.html">
+            
+                <a href="../YOLO实验/在 Linux 服务器环境下使用 yolov3 训练 voc 数据集.html">
+            
+                    
+                    在 Linux 服务器环境下使用 yolov3 训练 voc 数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="../YOLO实验/快速开始ScaledYOLOv4-知乎.html">
+            
+                <a href="../YOLO实验/快速开始ScaledYOLOv4-知乎.html">
+            
+                    
+                    快速开始ScaledYOLOv4-知乎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="../YOLO实验/笔记 - 在服务器上用 YOLOv4 训练和测试数据集.html">
+            
+                <a href="../YOLO实验/笔记 - 在服务器上用 YOLOv4 训练和测试数据集.html">
+            
+                    
+                    笔记 - 在服务器上用 YOLOv4 训练和测试数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../🌟Pytorch 搭建 YoloV4 目标检测平台.html">
+            
+                <a href="../🌟Pytorch 搭建 YoloV4 目标检测平台.html">
+            
+                    
+                    🌟Pytorch 搭建 YoloV4 目标检测平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../yolo--- 参数解释之 cfg 文件参数.html">
+            
+                <a href="../yolo--- 参数解释之 cfg 文件参数.html">
+            
+                    
+                    yolo--- 参数解释之 cfg 文件参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    6 - 数字生活
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../6 - 数字生活/1. 深度学习图像标注工具 - Labelme.html">
+            
+                <a href="../../6 - 数字生活/1. 深度学习图像标注工具 - Labelme.html">
+            
+                    
+                    1. 深度学习图像标注工具 - Labelme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../6 - 数字生活/Kindle使用手册.html">
+            
+                <a href="../../6 - 数字生活/Kindle使用手册.html">
+            
+                    
+                    Kindle使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../6 - 数字生活/卡西欧gg1000指针调节.html">
+            
+                <a href="../../6 - 数字生活/卡西欧gg1000指针调节.html">
+            
+                    
+                    卡西欧gg1000指针调节
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Market 1501 数据集及在 DeepSort 中的训练</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#market-1501-&#x6570;&#x636E;&#x96C6;"><b>1.1. </b>Market 1501 &#x6570;&#x636E;&#x96C6;</a></li><li><span class="title-icon "></span><a href="#deepsort-&#x6A21;&#x578B;&#x8BAD;&#x7EC3;"><b>1.2. </b>deepsort &#x6A21;&#x578B;&#x8BAD;&#x7EC3;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><blockquote>
+<p>&#x672C;&#x6587;&#x7531; <a href="http://ksria.com/simpread/" target="_blank">&#x7B80;&#x60A6; SimpRead</a> &#x8F6C;&#x7801;&#xFF0C; &#x539F;&#x6587;&#x5730;&#x5740; <a href="https://my.oschina.net/u/4883419/blog/4990739" target="_blank">my.oschina.net</a></p>
+</blockquote>
+<p>&#x8F6F;&#x786C;&#x4EF6;&#x73AF;&#x5883;</p>
+<ul>
+<li><p>ubuntu 18.04 64bit</p>
+</li>
+<li><p>GTX 1070Ti</p>
+</li>
+<li><p>anaconda with python 3.7</p>
+</li>
+<li><p>pytorch 1.6</p>
+</li>
+<li><p>cuda 10.1</p>
+</li>
+</ul>
+<h2 id="market-1501-&#x6570;&#x636E;&#x96C6;"><a name="market-1501-&#x6570;&#x636E;&#x96C6;" class="anchor-navigation-ex-anchor" href="#market-1501-&#x6570;&#x636E;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Market 1501 &#x6570;&#x636E;&#x96C6;</h2>
+<p><code>Market-1501</code>&#x6570;&#x636E;&#x96C6;&#x662F;&#x5728;&#x6E05;&#x534E;&#x5927;&#x5B66;&#x6821;&#x56ED;&#x4E2D;&#x91C7;&#x96C6;&#xFF0C;&#x5728;&#x590F;&#x5929;&#x62CD;&#x6444;&#xFF0C;&#x4E8E; 2015 &#x5E74;&#x6784;&#x5EFA;&#x5E76;&#x516C;&#x5F00;&#x3002;&#x5B83;&#x5305;&#x62EC;&#x7531; 6 &#x4E2A;&#x6444;&#x50CF;&#x5934; (&#x5176;&#x4E2D; 5 &#x4E2A;&#x9AD8;&#x6E05;&#x6444;&#x50CF;&#x5934;&#x548C; 1 &#x4E2A;&#x4F4E;&#x5206;&#x8FA8;&#x7387;&#x6444;&#x50CF;&#x5934;) &#x62CD;&#x6444;&#x5230;&#x7684; 1501 &#x4E2A;&#x884C;&#x4EBA;&#x3001;32668 &#x4E2A;&#x68C0;&#x6D4B;&#x5230;&#x7684;&#x884C;&#x4EBA;&#x77E9;&#x5F62;&#x6846;&#x3002;&#x6BCF;&#x4E2A;&#x884C;&#x4EBA;&#x81F3;&#x5C11;&#x6709; 2 &#x4E2A;&#x6444;&#x50CF;&#x5934;&#x6355;&#x6349;&#x5230;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x4E00;&#x4E2A;&#x6444;&#x50CF;&#x5934;&#x4E2D;&#x53EF;&#x80FD;&#x5177;&#x6709;&#x591A;&#x5F20;&#x56FE;&#x50CF;&#x3002;&#x8BAD;&#x7EC3;&#x96C6;&#x6709; 751 &#x4EBA;&#xFF0C;&#x5305;&#x542B; 12936 &#x5F20;&#x56FE;&#x50CF;&#xFF0C;&#x5E73;&#x5747;&#x6BCF;&#x4E2A;&#x4EBA;&#x6709; 17.2 &#x5F20;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#xFF1B;&#x6D4B;&#x8BD5;&#x96C6;&#x6709; 750 &#x4EBA;&#xFF0C;&#x5305;&#x542B; 19732 &#x5F20;&#x56FE;&#x50CF;&#xFF0C;&#x5E73;&#x5747;&#x6BCF;&#x4E2A;&#x4EBA;&#x6709; 26.3 &#x5F20;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x6570;&#x636E;&#x96C6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</p>
+<pre><code>Market-1501-v15.09.15&#x251C;&#x2500;&#x2500; bounding_box_test&#x251C;&#x2500;&#x2500; bounding_box_train&#x251C;&#x2500;&#x2500; gt_bbox&#x251C;&#x2500;&#x2500; gt_query&#x251C;&#x2500;&#x2500; query&#x2514;&#x2500;&#x2500; readme.txt
+</code></pre><p>&#x5305;&#x542B;&#x56DB;&#x4E2A;&#x6587;&#x4EF6;&#x5939;</p>
+<ul>
+<li><p><code>bounding_box_test</code>: &#x6D4B;&#x8BD5;&#x96C6;</p>
+</li>
+<li><p><code>bounding_box_train</code>: &#x8BAD;&#x7EC3;&#x96C6;</p>
+</li>
+<li><p><code>query</code>: &#x5171;&#x6709; 750 &#x4E2A;&#x8EAB;&#x4EFD;&#x3002;&#x6BCF;&#x4E2A;&#x6444;&#x50CF;&#x673A;&#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x56FE;&#x50CF;</p>
+</li>
+<li><p><code>gt_query</code>: &#x5305;&#x542B;&#x5B9E;&#x9645;&#x6807;&#x6CE8;</p>
+</li>
+<li><p><code>gt_bbox</code>: &#x624B;&#x7ED8;&#x8FB9;&#x6846;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x5668; <code>DPM</code>&#x8FB9;&#x754C;&#x6846;&#x662F;&#x5426;&#x826F;&#x597D;</p>
+</li>
+</ul>
+<p>&#x56FE;&#x7247;&#x547D;&#x540D;&#x89C4;&#x5219;</p>
+<p>&#x4EE5;<code>0001_c1s1_000151_01.jpg</code>&#x4E3A;&#x4F8B;</p>
+<ul>
+<li><p>0001 &#x8868;&#x793A;&#x6BCF;&#x4E2A;&#x4EBA;&#x7684;&#x6807;&#x7B7E;&#x7F16;&#x53F7;&#xFF0C;&#x4ECE; 0001 &#x5230; 1501&#xFF0C;&#x5171;&#x6709; 1501 &#x4E2A;&#x4EBA;</p>
+</li>
+<li><p><code>c1</code>&#x8868;&#x793A;&#x7B2C;&#x4E00;&#x4E2A;&#x6444;&#x50CF;&#x5934; ( <code>c</code>&#x662F; <code>camera</code>)&#xFF0C;&#x5171;&#x6709; 6 &#x4E2A;&#x6444;&#x50CF;&#x5934;</p>
+</li>
+<li><p><code>s1</code> &#x8868;&#x793A;&#x7B2C;&#x4E00;&#x4E2A;&#x5F55;&#x50CF;&#x7247;&#x6BB5; ( <code>s</code>&#x662F; <code>sequence</code>)&#xFF0C;&#x6BCF;&#x4E2A;&#x6444;&#x50CF;&#x673A;&#x90FD;&#x6709;&#x591A;&#x4E2A;&#x5F55;&#x50CF;&#x7247;&#x6BB5;</p>
+</li>
+<li><p>000151 &#x8868;&#x793A; <code>c1s1</code>&#x7684;&#x7B2C; 000151 &#x5E27;&#x56FE;&#x7247;&#xFF0C;&#x89C6;&#x9891;&#x5E27;&#x7387; fps &#x4E3A; 25</p>
+</li>
+<li><p>01 &#x8868;&#x793A; <code>c1s1_001051</code>&#x8FD9;&#x4E00;&#x5E27;&#x4E0A;&#x7684;&#x7B2C; 1 &#x4E2A;&#x68C0;&#x6D4B;&#x6846;&#xFF0C;&#x7531;&#x4E8E;&#x91C7;&#x7528; <code>DPM</code>&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x5668;&#xFF0C;&#x6BCF;&#x4E00;&#x5E27;&#x4E0A;&#x7684;&#x884C;&#x4EBA;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x76F8;&#x5E94;&#x7684;&#x6807;&#x6CE8;&#x6846;&#x4E5F;&#x4F1A;&#x6709;&#x591A;&#x4E2A;&#x3002;00 &#x5219;&#x8868;&#x793A;&#x624B;&#x5DE5;&#x6807;&#x6CE8;&#x6846;</p>
+</li>
+</ul>
+<p>&#x6570;&#x636E;&#x96C6;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;</p>
+<p>&#x94FE;&#x63A5;&#xFF1A;<a href="https://pan.baidu.com/s/1i9aiZx-EC3fjhn3uWTKZjw" target="_blank">https://pan.baidu.com/s/1i9aiZx-EC3fjhn3uWTKZjw</a><br>&#x63D0;&#x53D6;&#x7801;&#xFF1A;<code>up8x</code></p>
+<h2 id="deepsort-&#x6A21;&#x578B;&#x8BAD;&#x7EC3;"><a name="deepsort-&#x6A21;&#x578B;&#x8BAD;&#x7EC3;" class="anchor-navigation-ex-anchor" href="#deepsort-&#x6A21;&#x578B;&#x8BAD;&#x7EC3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. deepsort &#x6A21;&#x578B;&#x8BAD;&#x7EC3;</h2>
+<p>&#x524D;&#x6587; &#x300A;&#x57FA;&#x4E8E; YOLOv5 &#x548C; DeepSort &#x7684;&#x76EE;&#x6807;&#x8DDF;&#x8E2A;&#x300B; <a href="https://xugaoxiang.com/2020/10/17/yolov5-deepsort-pytorch/" target="_blank">https://xugaoxiang.com/2020/10/17/yolov5-deepsort-pytorch/</a> &#x4ECB;&#x7ECD;&#x8FC7;&#x5229;&#x7528;<code>YOLOv5</code>&#x548C;<code>DeepSort</code>&#x6765;&#x5B9E;&#x73B0;&#x76EE;&#x6807;&#x7684;&#x68C0;&#x6D4B;&#x53CA;&#x8DDF;&#x8E2A;&#x3002;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<code>Market 1501</code>&#x6570;&#x636E;&#x96C6;&#x6765;&#x8BAD;&#x7EC3;&#x8DDF;&#x8E2A;&#x5668;&#x6A21;&#x578B;&#x3002;</p>
+<p>&#x81F3;&#x4E8E;<code>YOLOv5</code>&#x68C0;&#x6D4B;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#xFF0C;&#x53C2;&#x8003;&#x524D;&#x9762;&#x7684;&#x535A;&#x6587; YOLOv5 &#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x3002;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x539F;&#x4F5C;&#x8005;&#x63D0;&#x4F9B;&#x7684;<code>yolov5s.pt</code>&#x5C31;&#x53EF;&#x884C;&#x3002;</p>
+<p>&#x4F9D;&#x8D56;&#x73AF;&#x5883;&#x5C31;&#x4E0D;&#x518D;&#x8BF4;&#x4E86;&#xFF0C;&#x53C2;&#x8003;&#x524D;&#x6587;</p>
+<pre><code>git clone --recurse-submodules https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch.gitcd Yolov5_DeepSort_Pytorch/deep_sort/deep_sort/deep
+</code></pre><p>&#x63A5;&#x4E0B;&#x6765;&#x5C06;&#x6570;&#x636E;&#x96C6;<code>Market</code>&#x62F7;&#x8D1D;&#x5230;<code>Yolov5_DeepSort_Pytorch/deep_sort/deep_sort/deep</code>&#x4E0B;&#x7136;&#x540E;&#x89E3;&#x538B;&#xFF0C;&#x6570;&#x636E;&#x96C6;&#x5B58;&#x653E;&#x7684;&#x4F4D;&#x7F6E;&#x662F;&#x968F;&#x610F;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53C2;&#x6570;<code>--data-dir</code>&#x6307;&#x5B9A;&#x3002;</p>
+<p>&#x9488;&#x5BF9;&#x539F;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x8BAD;&#x7EC3;&#x4EE3;&#x7801;<code>train.py</code>&#xFF0C;&#x9700;&#x8981;&#x505A;&#x70B9;&#x4FEE;&#x6539;</p>
+<p>&#x5C06;</p>
+<pre><code>train_dir = os.path.join(root,&quot;train&quot;)test_dir = os.path.join(root,&quot;test&quot;)
+</code></pre><p>&#x6539;&#x6210;</p>
+<pre><code>train_dir = os.path.join(root,&quot;&quot;)test_dir = os.path.join(root,&quot;&quot;)
+</code></pre><p>&#x7136;&#x540E;&#x5C06;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x5939;<code>bounding_box_train</code>&#x91CD;&#x547D;&#x540D;&#x4E3A;<code>train</code>&#xFF0C;<code>bounding_box_test</code>&#x91CD;&#x547D;&#x540D;&#x4E3A;<code>test</code>&#x3002;&#x4E0D;&#x7136;&#x7684;&#x8BDD;&#xFF0C;&#x8BAD;&#x7EC3;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4F1A;&#x62A5;&#x4E0B;&#x9762; 2 &#x4E2A;&#x9519;</p>
+<pre><code>Traceback (most recent call last):  File &quot;train.py&quot;, line 43, in &lt;module&gt;    torchvision.datasets.ImageFolder(train_dir, transform=transform_train),  File &quot;/home/xugaoxiang/anaconda3/envs/deepsort/lib/python3.7/site-packages/torchvision/datasets/folder.py&quot;, line 208, in __init__    is_valid_file=is_valid_file)  File &quot;/home/xugaoxiang/anaconda3/envs/deepsort/lib/python3.7/site-packages/torchvision/datasets/folder.py&quot;, line 100, in __init__    raise RuntimeError(msg)RuntimeError: Found 0 files in subfolders of: data/trainSupported extensions are: .jpg,.jpeg,.png,.ppm,.bmp,.pgm,.tif,.tiff,.webp
+</code></pre><p>&#x548C;</p>
+<pre><code>Traceback (most recent call last):  File &quot;train.py&quot;, line 43, in &lt;module&gt;    torchvision.datasets.ImageFolder(train_dir, transform=transform_train),  File &quot;/home/xugaoxiang/anaconda3/envs/deepsort/lib/python3.7/site-packages/torchvision/datasets/folder.py&quot;, line 208, in __init__    is_valid_file=is_valid_file)  File &quot;/home/xugaoxiang/anaconda3/envs/deepsort/lib/python3.7/site-packages/torchvision/datasets/folder.py&quot;, line 94, in __init__    classes, class_to_idx = self._find_classes(self.root)  File &quot;/home/xugaoxiang/anaconda3/envs/deepsort/lib/python3.7/site-packages/torchvision/datasets/folder.py&quot;, line 123, in _find_classes    classes = [d.name for d in os.scandir(dir) if d.is_dir()]FileNotFoundError: [Errno 2] No such file or directory: &apos;Market-1501-v15.09.15/train&apos;
+</code></pre><p>&#x6700;&#x540E;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x6539;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x7F16;&#x8F91;<code>model.py</code>&#xFF0C;&#x5C06;</p>
+<pre><code>def __init__(self, num_classes=751 ,reid=False):
+</code></pre><p>&#x6539;&#x6210;</p>
+<pre><code>def __init__(self, num_classes=2 ,reid=False):
+</code></pre><p>&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x8BAD;&#x7EC3;&#x4E86;</p>
+<pre><code>python train.py --data-dir Market-1501-v15.09.15
+</code></pre><p><img src="https://oscimg.oschina.net/oscnet/ff8a598c-011b-43a0-8328-1d929716c6bf.png" alt=""></p>
+<p>deepsort_market_pytorch</p>
+<p><img src="https://oscimg.oschina.net/oscnet/33a1f6f7-3fe9-464f-852c-e2acb09ff533.png" alt=""></p>
+<p>deepsort_market_pytorch</p>
+<p>&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x4F1A;&#x5728;<code>checkpoint</code>&#x4E0B;&#x751F;&#x6210;&#x6A21;&#x578B;&#x6587;&#x4EF6;<code>ckpt.t7</code>&#xFF0C;&#x627E;&#x4E2A;&#x89C6;&#x9891;&#xFF0C;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;</p>
+<p>deepsort_market_pytorch  </p>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;  </p>
+<hr>
+<ul>
+<li><p><a href="https://xugaoxiang.com/2020/10/17/yolov5-deepsort-pytorch/" target="_blank">https://xugaoxiang.com/2020/10/17/yolov5-deepsort-pytorch/</a></p>
+</li>
+<li><p><a href="https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch" target="_blank">https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch</a></p>
+</li>
+<li><p><a href="https://github.com/ZQPei/deep_sort_pytorch" target="_blank">https://github.com/ZQPei/deep_sort_pytorch</a></p>
+</li>
+<li><p><a href="https://github.com/ZQPei/deep_sort_pytorch/issues/134" target="_blank">https://github.com/ZQPei/deep_sort_pytorch/issues/134</a></p>
+</li>
+<li><p><a href="https://github.com/ZQPei/deep_sort_pytorch/issues/105" target="_blank">https://github.com/ZQPei/deep_sort_pytorch/issues/105</a></p>
+</li>
+</ul>
+<p>&#x672C;&#x6587;&#x5206;&#x4EAB;&#x81EA;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7; - &#x8FF7;&#x9014;&#x5C0F;&#x4E66;&#x7AE5;&#x7684; Note&#xFF08;Dev_Club&#xFF09;&#x3002;<br>&#x5982;&#x6709;&#x4FB5;&#x6743;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB; support@oschina.cn &#x5220;&#x9664;&#x3002;<br>&#x672C;&#x6587;&#x53C2;&#x4E0E; &#x201C;<a href="https://www.oschina.net/sharing-plan" target="_blank">OSC &#x6E90;&#x521B;&#x8BA1;&#x5212;</a>&#x201D;&#xFF0C;&#x6B22;&#x8FCE;&#x6B63;&#x5728;&#x9605;&#x8BFB;&#x7684;&#x4F60;&#x4E5F;&#x52A0;&#x5165;&#xFF0C;&#x4E00;&#x8D77;&#x5206;&#x4EAB;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.html" class="navigation navigation-prev " aria-label="Previous page: DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="yolov5 启用数据增强与 tensorboard 可视化.html" class="navigation navigation-next " aria-label="Next page: yolov5 启用数据增强与 tensorboard 可视化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Market 1501 数据集及在 DeepSort 中的训练","level":"1.7.2.4","depth":3,"next":{"title":"yolov5 启用数据增强与 tensorboard 可视化","level":"1.7.2.5","depth":3,"path":"5 - 实验笔记/Yolo+Deepsort/yolov5 启用数据增强与 tensorboard 可视化.md","ref":"5 - 实验笔记/Yolo+Deepsort/yolov5 启用数据增强与 tensorboard 可视化.md","articles":[]},"previous":{"title":"DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪","level":"1.7.2.3","depth":3,"path":"5 - 实验笔记/Yolo+Deepsort/DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.md","ref":"5 - 实验笔记/Yolo+Deepsort/DeepSort - 基于 YOLOv5 和 DeepSort 的目标跟踪.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","github-buttons","copy-code-button","anchor-navigation-ex","-highlight","-lunr","-search","search-pro","splitter"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Summary","gitbook":"*"},"file":{"path":"5 - 实验笔记/Yolo+Deepsort/Market 1501 数据集及在 DeepSort 中的训练.md","mtime":"2021-08-03T09:22:20.858Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-03T09:23:02.254Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
