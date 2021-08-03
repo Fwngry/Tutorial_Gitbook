@@ -1,0 +1,1035 @@
+FN Thomson Reuters Web of Knowledge
+VR 1.0
+MG HistCite 12.03.17
+MD Tue Feb  9 11:21:22 2021
+MO 9 ���� 2021
+ER
+
+PT J
+AU Cornelis, N
+   Leibe, B
+   Cornelis, K
+   Van Gool, L
+AF Cornelis, N
+   Leibe, B
+   Cornelis, K
+   Van Gool, L
+TI 3D urban scene modeling integrating recognition and reconstruction
+SO INTERNATIONAL JOURNAL OF COMPUTER VISION
+DT Article
+C1 [Cornelis, N] KU Leuven, Leuven, Belgium
+   [Leibe, B] ETH Zurich, Zurich, Switzerland
+   [Cornelis, K] KU Leuven, Leuven, Belgium
+   [Van Gool, L] KU Leuven, Leuven, Belgium, ETH Zurich, Zurich, Switzerland
+CR Bay H, 2006, Ninth European Conference on Computer Vision (ECCV'06)
+   Comaniciu D, 2002, IEEE Transactions on Pattern Analysis and Machine Intelligence, V5, P603
+   Cornelis N, 2005, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'05)
+   Cornelis N, 2006, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'06)
+   Cornelis N, 2006, Third International Symposium on 3D Data Processing, Visualization, and Transmission (3DPVT'06)
+   Dalal N, 2005, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'05)
+   Debevec P, 1998, Eurographics Rendering Workshop, P105
+   Dick A, 2001, Eighth International Conference on Computer Vision (ICCV'01)
+   Fischler M, 1981, Communications of the ACM, V24, P381
+   Frueh C, 2001, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'01), P31
+   Frueh C, 2005, International Journal of Computer Vision, V61, P159
+   Gruen A, 1997, Photogrammetric week'97, , Fritsch & Hobbie (Eds.), Stuttgart
+   Haala N, 1998, International Archives of Photogrammetry and Remote Sensing, V32, P77
+   Haala N, 1998, Proceedings ISPRS, P96
+   Haralick R, 1989, IEEE Transactions on Systems, V6, P1426
+   Hartley R, 2000, Cambridge University Press Cambridge
+   Hoiem D, 2006, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'06)
+   Hu J, 2003, IEEE Computer Graphics & Applications, V6, P62
+   Leibe B, 2005, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'05)
+   Leibe B, 2006, British Machine Vision Conference (BMVC'06), , Edinburgh, UK, September 2006
+   Leibe B, 2006, Lecture Notes in Computer Science : Vol. 4174. DAGM'06 Annual Pattern Recognition Symposium, P192
+   Leibe B, 2007, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'07)
+   Leibe B, 2007, International Journal of Computer Vision, , to appear
+   Leonardis A, 1995, International Journal of Computer Vision, V14, P253
+   Lowe D, 2004, International Journal of Computer Vision, V2, P91
+   Maas H, 2001, International Workshop on Automatic Extraction of Man-made Objects from Aerial and Space Images
+   Mikolajczyk K, 2005, IEEE Transactions on Pattern Analysis and Machine Intelligence, V10, P31
+   Mikolajczyk K, 2006, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'06)
+   Nister D, 2003, IEEE conference on computer vision and pattern recognition (CVPR'03), P195
+   Russell B, 2005, http://labelme.csail.mit.edu/, MIT AI Lab Memo AIM-2005-025, September 2005
+   Scharstein D, 2002, International Journal of Computer Vision, V47, P7
+   Stamos I, 2000, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'00)
+   Sudderth E, 2005, Tenth International Conference on Computer Vision (ICCV'05)
+   Sun Y, 2002, International Conference on Pattern Recognition (ICPR'02)
+   Torralba A, 2004, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'04)
+   Veksler O, 2003, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'03), P556
+   Vestri C, 2001, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'01)
+   Viola P, 2004, International Journal of Computer Vision, V2, P137
+   Vosselman G, 2001, 34-3/W4:22-24
+   Wolf M, 1999, Photogrammetric week'99, P305
+   Wu B, 2005, Tenth International Conference on Computer Vision (ICCV'05)
+   Yang R, 2003, IEEE Conference on Computer Vision and Pattern Recognition (CVPR'03)
+NR 42
+TC 175
+BP 121
+EP 141
+PY 2008
+VL 78
+IS 2-3
+DI 10.1007/s11263-007-0081-9
+UT 2-s2.0-40949163544
+ER
+
+PT J
+AU Irani, M
+   Anandan, P
+AF Irani, M
+   Anandan, P
+TI A unified approach to moving object detection in 2d and 3d scenes
+SO IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE
+DT Article
+C1 [Irani, M] Department of Applied Math and Computer Science, The Weizmann Institute of Science, 76100 Rehovot, Israel
+   [Anandan, P] Microsoft Corporation, One Microsoft Way, Redmond, WA 98052, United States
+CR Adelson E, 1991, Technical Report 181, , MIT Media Lab, Vision and Modeling Group, Dec
+   Adiv G, 1985, IEEE Trans. Pattern Analysis and Machine Intelligence, V7, P384
+   Adiv G, 1989, IEEE Trans. Pattern Analysis and Machine Intelligence, V11, P477
+   , 1993, Y. Aloimonos, ed. Erlbaum
+   Ayer S, 1995, Int'l Conf. Computer Vision, P777
+   Bergen J, 1992, European Conf. Computer Vision, P237
+   Bergen J, 1992, IEEE Trans. Pattern Analysis and Machine Intelligence, V14, P886
+   Burt P, 1991, IEEE Workshop Visual Motion, P187
+   Costeira J, 1995, Int'l Conf. Computer Vision, P1071
+   Darrell T, 1991, IEEE Workshop Visual Motion, P173
+   Faugeras O, 1993, Cambridge, Mass.: M.I.T. Press
+   Irani M, 1996, European Conf. Computer Vision, , Cambridge, UK, Apr
+   Irani M, 1996, Int'l Conf. Pattern Recognition, P712
+   Irani M, 1994, Int'l J. Computer Vision, V12, P5
+   Irani M, 1997, IEEE Trans. Pattern Analysis and Machine Intelligence, V19, P268
+   Ju S, 1996, Proc. of IEEE CVPR, V96, P307
+   Koenderink J, 1987, Biol. Cybern., V55, P367
+   Kumar R, 1994, Proc 12th ICPR
+   Kumar R, 1994, DARPA IU Workshop, , Monterey, Calif., Nov
+   Kumar R, 1995, Workshop on Representations of Visual Scenes
+   Lawn J, 1994, European Conf. Computer Vision, P205
+   Longuet-Higgins H, 1984, Proc. Royal Soc. London, V223, P165
+   Longuet-Higgins H, 1980, Proc. Royal Soc. London, V208, P385
+   Meyer F, 1992, European Conf. Computer Vision, P476
+   Rieger J, 1985, J. Optical Soc. Am. A, P354
+   Sawhney H, 1994, IEEE Conf. Computer Vision and Pattern Recognition, , June
+   Shashua A, 1994, IEEE Conf. Computer Vision and Pattern Recognition, P483
+   Shizawa M, 1991, IEEE Workshop Visual Motion, P164
+   Thompson W, 1990, Int'l J. Computer Vision, V4, P29
+   Torr P, 1994, European Conf. Computer Vision, 328-337, , May
+   Torr P, 1995, Int'l Conf. Computer Vision, P1037
+   Vemuri B, 1997, Proc. of 15th Int'l Conf. Information Processing in Medical Imaging, P465
+   Wang J, 1993, IEEE Conference Computer Vision and Pattern Recognition, P361
+NR 33
+TC 238
+BP 577
+EP 589
+PY 1998
+VL 20
+IS 6
+DI 10.1109/34.683770
+UT 2-s2.0-0032098797
+ER
+
+PT J
+AU Lai, K
+   Fox, D
+AF Lai, K
+   Fox, D
+TI Object recognition in 3D point clouds using web data and domain
+   adaptation
+SO INTERNATIONAL JOURNAL OF ROBOTICS RESEARCH
+DT Conference Paper
+C1 [Lai, K] Department of Computer Science and Engineering, University of Washington, Seattle, WA 98195, United States
+   [Fox, D] Department of Computer Science and Engineering University of Washington, Seattle, WA 98195, United States, Intel Labs Seattle, Seattle, WA 98105, United States
+CR Anguelov D,
+   Assfalg J, 2007, IEEE Transactions on Multimedia, V9, P589
+   Bacchiani M,
+   Boser B,
+   Caruana R, 1997, Machine Learning, V28, P41
+   Chang C, 2001, http://www.csie.ntu.edu.tw/goo1/4cjlin/libsvm
+   Chelba C, 2004, Adaptation of Maximum Entropy Capitalizer: Little Data Can Help A Lot. Proceedings of EMNLP 2004, P285
+   Comaniciu D, 2002, IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), V24, P603
+   Dai W,
+   Daum III H,
+   Daum III H, 2006, Journal of Artificial Intelligence Research (JAIR), V26, P101
+   Douillard B,
+   Fischler M, 1981, Communications of the ACM, V24, P381
+   Friedman J, 2000, The Annals of Statistics, V28, P337
+   Gildea D,
+   , 2008, http://sketchup.google.com/3dwarehouse/
+   Hall M, 2009, SIGKDD Exploration Newsletter, V11, P10
+   Hays J, 2007, ACM Transactions on Graphics (Proceedings of SIGGRAPH), V26, P4
+   Hwa R,
+   Jiang J,
+   Johnson A, 1999, IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), V21, P433
+   Keerthi S, 2006, Journal of Machine Learning Research, V7, P1493
+   Konolige K,
+   Körtgen M,
+   Li L,
+   Malisiewicz T,
+   Malisiewicz T,
+   Novotni M,
+   Nachter A,
+   Posner I,
+   Roark B,
+   Russell B, 2008, International Journal of Computer Vision, V77
+   Sapp B,
+   Saxena A, 2008, International Journal of Robotics Research, V27, P157, DOI 10.1177/0278364907087172
+   Shi J, 2000, IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), V22, P731
+   Shilane P, 2004, Shape Modeling International, P167
+   Torralba A, 2008, IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), V30, P1958
+   Triebel R,
+   Van Rijsbergen C, 1979, 2nd edition. London, Butterworths
+   Wellington C,
+NR 40
+TC 119
+BP 1019
+EP 1037
+PY 2010
+VL 29
+IS 8
+DI 10.1177/0278364910369190
+UT 2-s2.0-77954064287
+ER
+
+PT J
+AU Hoiem, D
+   Efros, AA
+   Hebert, M
+AF Hoiem, D
+   Efros, AA
+   Hebert, M
+TI Recovering surface layout from an image
+SO INTERNATIONAL JOURNAL OF COMPUTER VISION
+DT Article
+C1 [Hoiem, D] Robotics Institute, Carnegie Mellon University, Pittsburgh, PA 15213, United States
+   [Efros, AA] Robotics Institute, Carnegie Mellon University, Pittsburgh, PA 15213, United States
+   [Hebert, M] Robotics Institute, Carnegie Mellon University, Pittsburgh, PA 15213, United States
+CR Ahuja N, 1996, PAMI, V18
+   Arbelaez P, 2006, Proc. CVPRW
+   Barbu A, 2005, PAMI, V27, P1239
+   Biederman I, 1981, Perceptual Organization, , Kubovy, M. and Pomerantz, J.R, Eds, chapter 8. Lawrence Erlbaum
+   Boykov Y, 2001, PAMI, V23, P1222
+   Brooks R, 1979, Proc. Int. Joint Conf. on Ari. Intell
+   Delage E, 2006, Proc. CVPR
+   en Guo C, 2003, Proc. ICCV
+   Everingham M, 1999, Int. J. of Virt. Reality, V3
+   Gibson J, 1950, Houghton Mifflin
+   Guzman-Arenas A, 1968, MIT AI-TR
+   Han F, 2003, Int. Work. on Higher-Level Know. in 3D Modeling and Motion Anal
+   Han F, 2005, Proc. ICCV
+   Hartley R, 2004, 2nd edition. Cambridge University Press
+   Hoiem D, 2005, ACM SIGGRAPH
+   Hoiem D, 2006, Proc. CVPR
+   Koenderink J, 1998, Phil. Trans, P1071
+   Koenderink J, 1996, Perception and Psychophysics, V58, P163
+   Lafferty J, 2001, Proc. ICML, , Morgan Kaufmann Publishers Inc
+   Leung T, 2001, IJCV, V43, P29
+   Li Y, 2004, ACM Trans. on Graphics, V23, P303
+   Liebowitz D, 1999, Proc. EumGraphics, V18
+   Marr D, 1982, Freeman, San Francisco
+   Nabbe B, 2006, Proc. IROS
+   Ohta Y, 1978, IJCPR, P752
+   Oliva A, 2001, IJCV, V42, P145
+   Rabinovich A, 2006, Proc. CVPR
+   Roberts L, 1965, Machine perception of 3-d solids, P159
+   Russell B, 2006, Proc. CVPR
+   Saxena A, 2005, Proc. NIPS
+   Schapire R, 1999, Machine Learning, V37, P297
+   Sharon E, 2000, Proc. CVPR
+   Shi J, 2000, IEEE Trans. PAMI, V22
+   Sudderth E, 2005, Proc. ICCV
+   Sudderth E, 2006, Proc. CVPR
+   Tao H, 2001, Proc. ICCV, P532
+   Tenenbaum J, 1977, Experiments in interpretation guided segmentation, V8, P241
+   Tu Z, 2005, IJCV, V63, P113
+   Tu Z, 2002, PAMI, P657
+   Warren R, 1968, John Wiley & Sons
+   Yakimovsky Y, 1973, Proc. Int. Joint Conf. on Ari. Intell, P580
+   Konishi S, 2000, Proc. CVPR
+   Pollefeys M, 1998, Proc. ICCV
+   Kosecka J, 2002, Proc. ECCV, , Springer-Verlag
+   Ohta Y, 1985, Pitman
+   Ren X, 2003, Proc. ICCV
+   Criminisi A, 2000, IJCV, V40
+   Murphy K, 2003, Proc. NIPS
+   Hanson A, 1978, Computer Vision Systems
+   Felzenszwalb P, 2004, IJCV, V59
+   Friedman J, 2000, Annals of Statistics, V28
+   Torralba A, 2002, PAMI, V24
+   Hoiem D, 2005, Proc. ICCV
+   Singhal A, 2003, Proc. CVPR
+   Collins M, 2002, Machine Learning, V48
+   Barrow H, 1978, Computer Vision Systems
+NR 56
+TC 504
+BP 151
+EP 172
+PY 2007
+VL 75
+IS 1
+DI 10.1007/s11263-006-0031-y
+UT 2-s2.0-34547216923
+ER
+
+PT J
+AU Lepetit, V
+   Fua, P
+AF Lepetit, V
+   Fua, P
+TI Keypoint recognition using randomized trees
+SO IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE
+DT Article
+C1 [Lepetit, V] Ecole Polytechnique Fédérale de Lausanne (EPFL), Computer Vision Laboratory, CH-1015 Lausanne, Switzerland
+   [Fua, P] Ecole Polytechnique Fédérale de Lausanne (EPFL), Computer Vision Laboratory, CH-1015 Lausanne, Switzerland
+CR Amit Y, 2002, MIT Press
+   Amit Y, 1997, Neural Computation, V9, P1545
+   Baumberg A, 2000, Proc. Conf. Computer Vision and Pattern Recognition, P774
+   Beis J, 1997, Proc. Conf. Computer Vision and Pattern Recognition, P1000
+   Breiman L, 1984, Chapman and Hall
+   Breiman L, 1996, Machine Learning, V24, P123
+   Debevec P, 1998, Proc. ACM SIGGRAPH Conf., , July
+   Fergus R, 2005, Proc. Conf. Computer Vision and Pattern Recognition, , July
+   Fleuret F, 2001, Int'l J. Computer Vision, V41, P85
+   Fua P, 1997, RADIUS: Image Understanding for Intelligence Imagery, , Morgan Kaufmann
+   Ke Y, 2000, Proc. Conf. Computer Vision and Pattern Recognition, P111
+   Lepetit V, 2004, , Technical Report IC/2004/74, EPFL
+   Lepetit V, 2004, Proc. Conf. Computer Vision and Pattern Recognition, , June
+   Lindeberg T, 1994, J. Applied Statistics, V21, P224
+   Lowe D, 1999, Proc. Int'l Conf. Computer Vision, P1150
+   Lowe D, 2004, Int'l J. Computer Vision, V20, P91
+   Marée R, 2005, Proc. Conf. Computer Vision and Pattern Recognition
+   Matas J, 2002, Proc. British Machine Vision Conf., P384
+   Meltzer J, 2004, Proc. European Conf. Computer Vision, P215
+   Mikolajczyk K, 2002, Proc. European Conf. Computer Vision, P128
+   Mikolajczyk K, 2003, Proc. Conf. Computer Vision and Pattern Recognition, P257
+   Mikolajczyk K, 2005, Int'l J. Computer Vision
+   Mindru F, 1999, Proc. Conf. Computer Vision and Pattern Recognition, P368
+   Nayar S, 1996, IEEE Trans. Pattern Analysis and Machine Intelligence, V18, P1186
+   Pilet J, 2005, Proc. Conf. Computer Vision and Pattern Recognition, , June
+   Pritchard D, 2003, Proc. Eurographics, V22, P263
+   Rosten E, 2005, Proc. Int'l Conf. Computer Vision, , Oct
+   Schaffalitzky F, 2002, Proc. European Conf. Computer Vision, P414
+   Schmid C, 1997, IEEE Trans. Pattern Analysis and Machine Intelligence, V19, P530
+   Tuytelaars T, 2000, Proc. British Machine Vision Conf., P412
+   Viola P, 2001, Proc. Conf. Computer Vision and Pattern Recognition, P511
+NR 31
+TC 560
+BP 1465
+EP 1479
+PY 2006
+VL 28
+IS 9
+DI 10.1109/TPAMI.2006.188
+UT 2-s2.0-33745821131
+ER
+
+PT J
+AU Leibe, B
+   Schindler, K
+   Cornelis, N
+   Van Gool, L
+AF Leibe, B
+   Schindler, K
+   Cornelis, N
+   Van Gool, L
+TI Coupled object detection and tracking from static cameras and moving
+   vehicles
+SO IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE
+DT Article
+C1 [Leibe, B] BIWI, ETH Zurich, Sternwarstrasse 7, CH-8092 Zurich, Switzerland
+   [Schindler, K] BIWI, ETH Zurich, Sternwarstrasse 7, CH-8092 Zurich, Switzerland
+   [Cornelis, N] ESAT/PSI-VISICS IBBT, KU Leuven, Kasteelpark Arenberg 10, B-3001 Leuvern-Heverlee, Belgium
+   [Van Gool, L] BIWI, ETH Zurich, Sternwarstrasse 7, CH-8092 Zurich, Switzerland, ESAT/PSI-VISICS IBBT, KU Leuven, Kasteelpark Arenberg 10, B-3001 Leuvern-Heverlee, Belgium
+CR Avidan S, 2005, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Berclaz J, 2006, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition, P744
+   Betke M, 2000, Machine Vision and Applications, V12, P69
+   Boros E, 2002, Discrete Applied Math, V123, P155
+   Comaniciu D, 2002, IEEE Trans. Pattern Analysis and Machine Intelligence, V24, P603
+   Comaniciu D, 2003, IEEE Trans. Pattern Analysis and Machine Intelligence, V25, P564
+   Cornelis N, 2006, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Cornelis N, 2008, Int'l J. Computer Vision, V78, P121
+   Cox I, 1993, Int'l J. Computer Vision, V10, P53
+   Dalal N, 2005, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition)
+   Ess A, 2007, Proc. IEEE Int'l Conf. Computer Vision
+   Everingham M, 2006, LNAI, 3944. , Machine Learning Challenges: Evaluating Predictive Uncertainty, Visual Object Classification, and Recognising Textual Entailment, Springer
+   Fortmann T, 1983, IEEE J. Oceanic Eng, V8, P173
+   Gavrila D, 1999, Proc. IEEE Int'l Conf. Computer Vision, P87
+   Gelb A, 1996, MIT Press
+   Giebel J, 2004, Proc. European Conf. Computer Vision
+   Grabner H, 2006, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition, P260
+   Hartley R, 2000, Cambridge Univ. Press
+   Hoiem D, 2005, Proc. IEEE Int'l Conf. Computer Vision
+   Hoiem D, 2006, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Isard M, 1998, Int'l J. Computer Vision, V29
+   Kaucic R, 2005, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Keuchel J, 2006, Proc. European Conf. Computer Vision, P454
+   Koller D, 1993, Int'l J. Computer Vision, V10, P257
+   Kumar M, 2006, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Lanz O, 2006, IEEE Trans. Pattern Analysis and Machine Intelligence, V28, P1436
+   Leibe B, 2007, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Leibe B, 2008, Int'l J. Computer Vision, V77, P2519
+   Leibe B, 2006, Proc. British Machine Vision Conf
+   Leibe B, 2007, Proc. IEEE Int'l Conf. Computer Vision
+   Leibe B, 2005, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Leonardis A, 1995, Int'l J. Computer Vision, V14, P253
+   Lowe D, 2004, Int'l J. Computer Vision, V60, P91
+   Mikolajczyk K, 2006, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Mikolajczyk K, 2005, IEEE Trans. Pattern Analysis and Machine Intelligence, 27 (10). , Oct
+   Nummiaro K, 2003, Image and Vision Computing, V21, P99
+   Okuma K, 2004, Proc. European Conf. Computer Vision
+   Philomin V, 2000, Proc. Intelligent Vehicles Symp, P350
+   Rother C, 2007, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Stauffer C, 1999, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Viola P, 2004, Int'l J. Computer Vision, V57, P137
+   Viola P, 2003, Proc. IEEE Int'l Conf. Computer Vision, P734
+   Wu B, 2005, Proc. IEEE Int'l Conf. Computer Vision
+   Wu B, 2006, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+   Yan F, 2006, Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition
+NR 45
+TC 272
+BP 1683
+EP 1698
+PY 2008
+VL 30
+IS 10
+DI 10.1109/TPAMI.2008.170
+UT 2-s2.0-50249105375
+ER
+
+PT J
+AU Chen, X
+   Kundu, K
+   Zhu, Y
+   Ma, H
+   Fidler, S
+   Urtasun, R
+AF Chen, X
+   Kundu, K
+   Zhu, Y
+   Ma, H
+   Fidler, S
+   Urtasun, R
+TI 3D Object Proposals Using Stereo Imagery for Accurate Object Class
+   Detection
+SO IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE
+DT Article
+C1 [Chen, X] Department of Electronic Engineering, Tsinghua University, Beijing, 100084, China
+   [Kundu, K] Department of Computer Science, University of Toronto, Toronto, ON  M5S, Canada
+   [Zhu, Y] Department of Computer Science, University of Toronto, Toronto, ON  M5S, Canada
+   [Ma, H] Department of Electronic Engineering, Tsinghua University, Beijing, 100084, China
+   [Fidler, S] Department of Computer Science, University of Toronto, Toronto, ON  M5S, Canada
+   [Urtasun, R] Department of Computer Science, University of Toronto, Toronto, ON  M5S, Canada
+CR Krizhevsky A, 2012, Proc. Int. Conf. Neural Inf. Process. Syst., P1097
+   Simonyan K, 2015, Proc. Int. Conf. Learn. Representations
+   Felzenszwalb P, 2010, IEEE Trans. Pattern Anal. Mach. Intell., V32, P1627
+   Girshick R, 2014, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P580
+   Zhu Y, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P4703
+   Everingham M, 2007, Int. J. Comput. Vis., V88, P303
+   Van De Sande K, 2011, Proc. IEEE Int. Conf. Comput. Vis., P1879
+   Arbelaez P, 2014, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P328
+   Alexe B, 2012, IEEE Trans. Pattern Anal. Mach. Intell., V34, P2189
+   Cheng M, 2014, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P3286
+   Zitnick L, 2014, Proc. Eur. Conf. Comput. Vis., P391
+   Krahenbuhl P, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P1574
+   Lee T, 2015, Proc. IEEE Int. Conf. Comput. Vis., P1680
+   Ghodrati A, 2015, Proc. IEEE Int. Conf. Comput. Vis., P2578
+   Geiger A, 2012, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P3354
+   Girshick R, 2015, Proc. IEEE Int. Conf. Comput. Vis., P1440
+   Joachims T, 2009, J. Mach. Learn., V77, P27
+   Gupta S, 2014, Proc. Eur. Conf. Comput. Vis., P345
+   Chen X, 2015, Proc. Int. Conf. Neural Inf. Process. Syst., P424
+   Banica D, 2013, CPMC-3D-P2P: Semantic Segmentation of RGB-D Images Using CPMC and Second Order Pooling
+   Lin D, 2013, Proc. IEEE Int. Conf. Comput. Vis., P1417
+   Karpathy A, 2013, Proc. IEEE Int. Conf. Robot. Autom., P2088
+   Oneata D, 2014, Proc. Eur. Conf. Comput. Vis., P737
+   Fragkiadaki K, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P4083
+   Manen S, 2013, Proc. IEEE Int. Conf. Comput. Vis., P2536
+   Krahenbuhl P, 2014, Proc. Eur. Conf. Comput. Vis., P725
+   Fidler S, 2013, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P3294
+   Zhang Z, 2015, Bing++: A Fast High Quality Object Proposal Generator at 100 Fps
+   Chen X, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P2587
+   Hosang J, 2016, IEEE Trans. Pattern Anal. Mach. Intell., V38, P814
+   Song S, 2014, Proc. Eur. Conf. Comput. Vis., P634
+   Pepik B, 2015, IEEE Trans. Pattern Anal. Mach. Intell., V37, P2232
+   Zia M, 2015, Int. J. Comput. Vis., V112, P188
+   Ohn-Bar E, 2015, IEEE Trans. Intell. Transp. Syst., V16, P2511
+   Long C, 2014, Proc. Asian Conf. Comput. Vis., P260
+   Wang S, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P3964
+   Li B, 2014, Proc. Eur. Conf. Comput. Vis., P652
+   Hu Q, 2016, IEEE Trans. Intell. Transp. Syst., V17, P1002
+   Xiang Y, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P1903
+   Dollar P, 2014, IEEE Trans. Pattern Anal. Mach. Intell., V36, P1532
+   Hosang J, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P4073
+   Tian Y, 2015, Proc. IEEE Int. Conf. Comput. Vis., P1904
+   Cai Z, 2015, Proc. IEEE Int. Conf. Comput. Vis., P3361
+   Ren S, 2015, Proc. Int. Conf. Neural Inf. Process. Syst., P91
+   Yamaguchi K, 2014, Proc. Eur. Conf. Comput. Vis., P756
+   Tsochantaridis I, 2004, Proc. Int. Conf. Mach. Learn.
+   Schwing A, 2013, Proc. IEEE Int. Conf. Comput. Vis., P353
+   Chatfield K, 2014, Proc. British Mach. Vis. Conf., P1
+   Behley J, 2013, Proc. IEEE/RSJ Intl. Conf. Intell. Robots Syst., P4195
+   Plotkin L, 2015, Bachelor's Thesis, Dept. of Computer Science, Karlsruhe Institute of Technology, Karlsruhe, Germany
+   Wang D, 2015, Proc. Robot.: Sci. Syst.
+   Li B, 2016, Proc. Robot.: Sci. Syst.
+   Gonzalez A, 2015, Proc. IEEE Intell. Vehicles Symp., P356
+   Xu J, 2014, Hierarchical Adaptive Structural SVM for Domain Adaptation
+   Premebida C, 2014, Proc. IEEE/ RSJ Int. Conf. Intell. Robots Syst., P4112
+   Paisitkriangi S, 2014, Pedestrian Detection with Spatially Pooled Features and Structured Ensemble Learning
+   Zhang S, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P1751
+   Geiger A, 2011, Proc. Int. Conf. Neural Inf. Process. Syst., P1467
+   Pepik B, 2013, Proc. IEEE Conf. Comput. Vis. Pattern Recog., P3286
+   Carreira J, 2012, IEEE Trans. Pattern Anal. Mach. Intell., V34, P1312
+   Carreira J, 2012, Proc. Eur. Conf. Comput. Vis., P430
+NR 61
+TC 90
+BP 1259
+EP 1272
+PY 2018
+VL 40
+IS 5
+DI 10.1109/TPAMI.2017.2706685
+UT 2-s2.0-85044863283
+ER
+
+PT J
+AU Pham, CC
+   Jeon, JW
+AF Pham, CC
+   Jeon, JW
+TI Robust object proposals re-ranking for object detection in autonomous
+   driving using convolutional neural networks
+SO SIGNAL PROCESSING: IMAGE COMMUNICATION
+DT Article
+C1 [Pham, CC] College of Information and Communication Engineering, Sungkyunkwan University, Suwon, South Korea
+   [Jeon, JW] College of Information and Communication Engineering, Sungkyunkwan University, Suwon, South Korea
+CR Geiger A, 2012, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P3354
+   Viola P, 2004, J. Comput. Vis., V57, P137
+   Dalal N, 2005, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), V1, P886
+   Felzenszwalb P, 2010, IEEE Trans. Pattern Anal. Mach. Intell., V32, P1627
+   Krizhevsky A, 2012, Proceedings Adv. Neural Inf. Process. Syst. (NIPS)
+   Wang X, 2013, Proceedings International Conference on Comput. Vis. (ICCV), P17
+   Szegedy C,
+   Simonyan K,
+   Girshick R, 2014, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P580
+   He K, 2014, Proceedings ECCV2014, P346
+   Girshick R, 2015, Proceedings International Conference on Comput. Vis. (ICCV)
+   Alexe B, 2010, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P73
+   Carreira J, 2010, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P3241
+   Endres I, 2010, Proceedings ECCV2010, P575
+   van de Sande K, 2011, Proceedings International Conference on Comput. Vis. (ICCV)
+   Hosang J, 2014, BMVC
+   Hosang J, 2016, IEEE Trans. Pattern Anal. Mach. Intell., V38, P814
+   Zitnick C, 2014, Proceedings ECCV2014, P391
+   Chen X, 2015, Proceedings Adv. Neural Inf. Process. Syst. (NIPS), P424
+   LeCun Y, 1989, Neural Comput., V1, P541
+   Alexe B, 2012, IEEE Trans. Pattern Anal. Mach. Intell., V34, P2189
+   Rahtu E, 2011, Proceedings International Conference on Comput. Vis. (ICCV)
+   Zhang Z, 2011, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P1497
+   Cheng M, 2014, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P3286
+   Zhao Q, 2014, BMVC
+   Zhang Z,
+   Lu C, 2015, Proceedings International Conference on Comput. Vis. (ICCV), P2021
+   Kuo W, 2015, Proceedings International Conference on Comput. Vis. (ICCV), P2479
+   Chen X, 2015, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P2587
+   Carreira J, 2012, IEEE Trans. Pattern Anal. Mach. Intell., V34, P1312
+   Humayun A, 2014, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P336
+   Endres I, 2014, IEEE Trans. Pattern Anal. Mach. Intell., V36, P222
+   Uijlings J, 2013, Int. J. Comput. Vis., V104, P154
+   Wang X, 2015, IEEE Trans. Pattern Anal. Mach. Intell., V37, P2071
+   Felzenszwalb P,
+   Manén S, 2013, Proceedings International Conference on Comput. Vis. (ICCV), P2536
+   Rantalankila P, 2014, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P2417
+   Arbeláez P, 2014, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P328
+   Krahenbuhl P, 2014, Proceedings ECCV2014, P725
+   Krahenbuhl P, 2014, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P1574
+   Lee T, 2015, Proceedings International Conference on Comput. Vis. (ICCV)
+   Erhan D, 2014, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P2155
+   Ghodrati A, 2015, Proceedings International Conference on Comput. Vis. (ICCV), P2578
+   Pinheiro P, 2015, Proceedings Adv. Neural Inf. Process. Syst. (NIPS), P1981
+   Ren S, 2015, Proceedings Adv. Neural Inf. Process. Syst. (NIPS)
+   Jie Z,
+   Chen X, 2016, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR)
+   Yamaguchi K, 2014, Proceedings ECCV2014, P756
+   Sun Z, 2010, IEEE Trans. Pattern Anal. Mach. Intell., V28, P694
+   Dollar P, 2012, IEEE Trans. Pattern Anal. Mach. Intell., V34, P743
+   Sivaraman S, 2013, IEEE Trans. Intell. Transp. Syst., V14, P1773
+   Benenson R, 2014, Proceedings ECCV2014 Workshops, P613
+   Ohn-Bar E, 2015, IEEE Trans. Intell. Transp. Syst., V16, P2511
+   Pepik B, 2013, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P1
+   Geiger A, 2011, Proceedings Adv. Neural Inf. Process. Syst. (NIPS)
+   Yebes J, 2014, Proceedings IV
+   Pepik B, 2015, IEEE Trans. Pattern Anal. Mach. Intell., V37, P2232
+   Xiang Y, 2015, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P1903
+   Guney F, 2015, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P4165
+   Zbontar J,
+   Pham C, 2015, Signal Process. Image Commun., V39, P173
+   Tsochantaridis I, 2004, Proceedings International Conference Machine learning (ICML)
+   Srivastava N, 2014, J. Mach. Learn. Res., V15, P1929
+   Zhu Y, 2015, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P4703
+   Jia Y,
+   Hu Q, 2016, IEEE Trans. Intell. Transp. Syst., V17, P1002
+   Wu T, 2014, Proceedings ECCV2014, P652
+   Cai Z, 2015, Proceedings International Conference on Comput. Vis. (ICCV), P3361
+   Tian Y, 2015, Proceedings International Conference on Comput. Vis. (ICCV), P1904
+   Zhang S, 2005, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P1751
+   Hosang J, 2015, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P4073
+   Benenson R, 2013, Proceedings IEEE International Conference Comput. Vis. Pattern Recognit. (CVPR), P3666
+NR 72
+TC 40
+BP 110
+EP 122
+PY 2017
+VL 53
+DI 10.1016/j.image.2017.02.007
+UT 2-s2.0-85013841781
+ER
+
+PT J
+AU Geiger, A
+   Lenz, P
+   Stiller, C
+   Urtasun, R
+AF Geiger, A
+   Lenz, P
+   Stiller, C
+   Urtasun, R
+TI Vision meets robotics: The KITTI dataset
+SO INTERNATIONAL JOURNAL OF ROBOTICS RESEARCH
+DT Article
+C1 [Geiger, A] Karlsruhe Institute of Technology, Max Planck Institute for Intelligent Systems, Spemannstrasse 41, 72076 Tübingen, Germany
+   [Lenz, P] Department of Measurement and Control Systems, Karlsruhe Institute of Technology, Germany, Germany
+   [Stiller, C] Department of Measurement and Control Systems, Karlsruhe Institute of Technology, Germany, Germany
+   [Urtasun, R] Toyota Technological Institute at Chicago, IL, United States
+CR Brubaker M,
+   Geiger A,
+   Geiger A,
+   Geiger A,
+   Geiger A,
+   Goebl M,
+   Horaud R, 1995, International Journal of Robotics Research, V14, P195
+   Osborne P, 2008, http://mercator.myzen.co.uk/mercator.pdf
+   Paul R,
+   Pfeiffer D,
+   Singh G,
+   Wojek C,
+NR 12
+TC 2268
+BP 1231
+EP 1237
+PY 2013
+VL 32
+IS 11
+DI 10.1177/0278364913491297
+UT 2-s2.0-84884231503
+ER
+
+PT J
+AU Ye, Y
+   Chen, H
+   Zhang, C
+   Hao, X
+   Zhang, Z
+AF Ye, Y
+   Chen, H
+   Zhang, C
+   Hao, X
+   Zhang, Z
+TI SARPNET: Shape attention regional proposal network for liDAR-based 3D
+   object detection
+SO NEUROCOMPUTING
+DT Article
+C1 [Ye, Y] Beijing Jiaotong UniversityBeijing, China
+   [Chen, H] Beijing Jiaotong UniversityBeijing, China
+   [Zhang, C] Institute of Automation, Chinese Academy of SciencesBeijing, China
+   [Hao, X] Beijing Jiaotong UniversityBeijing, China
+   [Zhang, Z] Institute of Automation, Chinese Academy of SciencesBeijing, China
+CR Nie W, 2016, Neurocomputing, V215, P63
+   Zhou Y, 2017, , VoxelNet: end-to-end learning for point cloud based 3D object detection. arXiv:
+   Tian G, 2019, Neurocomputing, V345, P3
+   Shi S, 2018, , PointRCNN: 3D object proposal generation and detection from point cloud arXiv:
+   Guo J, 2019, Neurocomputing, V360, P75
+   Geiger A, 2012, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), P3354
+   Ali W, 2018, , YOLO3D: end-to-end real-time 3D oriented object bounding box detection from LiDAR point cloud. arXiv:
+   Simon M, 2018, , Complex-YOLO: real-time 3D object detection on point clouds. arXiv:
+   Lang A, 2018, , PointPillars: fast encoders for object detection from point clouds, arXiv:
+   Ren S, 2015, Proceedings of the Advances in Neural Information Processing Systems, P91
+   Chen X, 2017, Proceedings of the IEEE CVPR, V1, P3
+   Ku J, 2017, , Joint 3D proposal generation and object detection from view aggregation, arXiv:
+   Qi C, 2017, , Frustum PointNets for 3D object detection from RGB-D data. arXiv:
+   Qi C, 2017, IEEE Proc. Comput. Vis. Pattern Recognit. (CVPR), V1, P4
+   Qi C, 2017, Proceedings of the Advances in Neural Information Processing Systems, P5099
+   Shin K, 2018, , RoarNet: a robust 3D object detection based on region approximation refinement arXiv:
+   Yang Z, 2018, , IPOD: intensive point-based object detector for point cloud. arXiv:
+   Du X, 2018, Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), P3194
+   Yang B, 2018, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, P7652
+   Graham B, 2017, , Submanifold sparse convolutional networks
+   Dalal N, 2005, Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition, V1, P886
+   Tjahyadi R, 2007, Proceedings of the IJCAI, P2891
+   Krizhevsky A, 2012, Proceedings of the Advances in Neural Information Processing Systems, P1097
+   Mnih V, 2014, Proceedings of the Advances in Neural Information Processing systems, P2204
+   Vaswani A, 2017, Proceedings of the Advances in Neural Information Processing Systems, P5998
+   Shen T, 2018, Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence
+   Chorowski J, 2015, Proceedings of the Advances in Neural Information Processing Systems, V28, P577
+   Lu J, 2017, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), V6, P2
+   Liu C, 2017, Proceedings of the AAAI, P4176
+   Wang F, 2017, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, P3156
+   Fang W, 2019, Neurocomputing, V361, P85
+   Yu J, 2019, IEEE Trans. Neural Netw. Learn. Syst., P1
+   Hu H, 2018, Proceedings of the Computer Vision and Pattern Recognition (CVPR), V2
+   Zhang S, 2018, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, P6995
+   Ji Y, 2018, Neurocomputing, V322, P130
+   Yang B, 2018, Proceedings of the Conference on Robot Learning, P146
+   Lin T, 2018, IEEE Trans. Pattern Anal. Mach. Intell.
+   Caesar H, 2019, , nuScenes: a multimodal dataset for autonomous driving arXiv:
+   Zhang J, 2018, IEEE Trans. Image Process., V27, P2420
+   Liang M, 2018, Proceedings of the European Conference on Computer Vision (ECCV), P641
+   Yan Y, 2018, Sensors, V18, P3337
+   Redmon J, 2017, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, P7263
+   Redmon J, 2016, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, P779
+   Lin T, 2017, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, P2117
+NR 44
+TC 5
+BP 53
+EP 63
+PY 2020
+VL 379
+DI 10.1016/j.neucom.2019.09.086
+UT 2-s2.0-85075538273
+ER
+
+PT J
+AU Hoiem, D
+   Efros, AA
+   Hebert, M
+AF Hoiem, D
+   Efros, AA
+   Hebert, M
+TI Putting objects in perspective
+SO INTERNATIONAL JOURNAL OF COMPUTER VISION
+DT Article
+C1 [Hoiem, D] Robotics Institute, Carnegie Mellon University, Pittsburgh, PA 15213, United States
+   [Efros, AA] Robotics Institute, Carnegie Mellon University, Pittsburgh, PA 15213, United States
+   [Hebert, M] Robotics Institute, Carnegie Mellon University, Pittsburgh, PA 15213, United States
+CR , 2005, http://www.pascal-network.org/challenges/VOC/
+   Barrow H, 1978, Comp. Vision Systems
+   Biederman I, 1981, Perceptual Organization, , Erlbaum Hillsdale Chap. 8
+   Brooks R, 1979, IJCAI
+   Collins M, 2002, Machine Learning, V48, P253
+   Coughlan J, 2003, Neural Computation, V5, P1063
+   Forsyth D, 1994, CVPR
+   Greienhagen M, 2000, CVPR
+   He X, 2004, CVPR
+   Hoiem D, 2005, ICCV
+   Hoiem D, 2006, CVPR
+   Kosecka J, 2002, ECCV, , Springer Berlin
+   Krahnstoever N, 2005, ICCV
+   Kumar S, 2003, ICCV
+   Kumar S, 2005, ICCV
+   Lalonde J, 2007, ACM SIGGRAPH
+   Murphy K, 2001, Computing Science and Statistics, V33
+   Murphy K, 2003, NIPS
+   Navot A, 2006, NIPS
+   Ohta Y, 1985, Pitman London
+   Oliva A, 2006, Building the Gist of a Scene: The Role of Global Image Features in Recognition
+   Pearl J, 1988, Morgan Kaufmann San Mateo
+   Russell B, 2005, (Technical Report). Cambridge, MA: MIT Press
+   Schneiderman H, 2004, CVPR
+   Torralba A, 2005, Contextual Influences on Saliency, P586
+   Torralba A, 2002, IEEE Trans. Pattern Anal. Math. Intell., V9, P1226
+   Torralba A, 2001, ICCV
+   Tu Z, 2005, Int. J. Comput. Vis., V2, P113
+   Viola P, 2004, Int. J. Comput. Vis., V2, P137
+   Jeong S, 2001, ISIE
+   Platt J, 2000, Advances in Large Margin Classifiers
+   Sudderth E, 2005, ICCV
+   Dalal N, 2005, CVPR
+   Hanson A, 1978, Computer Vision Systems
+NR 34
+TC 340
+BP 3
+EP 15
+PY 2008
+VL 80
+IS 1
+DI 10.1007/s11263-008-0137-5
+UT 2-s2.0-51349086291
+ER
+
+PT J
+AU Rubino, C
+   Crocco, M
+   Del Bue, A
+AF Rubino, C
+   Crocco, M
+   Del Bue, A
+TI 3D Object Localisation from Multi-View Image Detections
+SO IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE
+DT Article
+C1 [Rubino, C] Visual Geometry and Modelling (VGM) Lab, Istituto Italiano di Tecnologia, Via Morego 30, Genova, 16163, Italy
+   [Crocco, M] Visual Geometry and Modelling (VGM) Lab, Istituto Italiano di Tecnologia, Via Morego 30, Genova, 16163, Italy
+   [Del Bue, A] Visual Geometry and Modelling (VGM) Lab, Istituto Italiano di Tecnologia, Via Morego 30, Genova, 16163, Italy
+CR Glasner D, 2011, Proc. IEEE Int. Conf. Comput. Vis., P1275
+   Pepik B, 2012, Proc. Eur. Conf. Comput. Vis., P356
+   Xiao J, 2008, Proc. Eur. Conf. Comput. Vis., P725
+   Savarese S, 2007, Proc. IEEE Int. Conf. Comput. Vis., P1
+   Savarese S, 2008, Proc. Eur. Conf. Comput. Vis., P602
+   Torki M, 2011, Proc. IEEE Int. Conf. Comput. Vis., P2603
+   Murphy-Chutorian E, 2009, IEEE Trans. Pattern Anal. Mach. Intell., V31, P607
+   Vicente S, 2014, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P41
+   Bao S, 2011, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P2025
+   Fioraio N, 2013, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P1538
+   Salas-Moreno R, 2013, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P1352
+   Kanade T, 1981, Artif. Intell., V17, P409
+   Brooks R, 1983, IEEE Trans. Pattern Anal. Mach. Intell., P140
+   Zia M, 2015, Int. J. Comput. Vis., V112, P188
+   Muhammad Z, 2014, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P3678
+   Liebelt J, 2010, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P1688
+   Bao S, 2012, Proc. Eur. Conf. Comput. Vis., P86
+   Bao S, 2013, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P1264
+   Dame A, 2013, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P1288
+   Fidler S, 2012, Proc. Advances Neural Inf. Process. Syst., P611
+   Ma S, 1996, Proc. Int. Conf. Pattern Recognit., V1, P344
+   Cross G, 1998, Proc. IEEE Int. Conf. Comput. Vis., P25
+   Crocco M, 2016, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P4141
+   Hartley R, 2003, Cambridge, U. K.: Cambridge Univ. Press
+   Henderson H, 1979, Canadian J. Statist., V7, P65
+   Kato T, 2012, Berlin, Germany: Springer
+   Ayoub A, 1993, Math. Mag., V66, P322
+   Divvala S, 2012, Proc. 12th Int. Conf. Comput. Vis., P31
+   Farenzena M, 2008, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P1
+   Fusiello A, 2004, IEEE Trans. Pattern Anal. Mach. Intell., V26, P1633
+   Farenzena M, 2006, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., V1, P1185
+   Choi W, 2010, Proc. Eur. Conf. Comput. Vis., P553
+   Farenzena M, 2009, Proc. IEEE 12th Int. Conf. Comput. Vis. Workshops, P1489
+   Hinterstoisser S, 2012, Proc. 11th Asian Conf. Comput. Vis., P548
+   Aldoma A, 2014, Proc. IEEE/RSJ Int. Conf. Intell. Robots Syst., P5016
+   Geiger A, 2013, Int. J. Robot. Res., V32, P1231
+   Geiger A, 2011, Proc. Advances Neural Inf. Process. Syst., P1467
+   Ohn-Bar E, 2014, Proc. IEEE Conf. Comput. Vis. Pattern Recognit. Workshops, P179
+   , 2014, https://get.google.com/tango/
+   Ren S, 2015, Proc. Advances Neural Inf. Process. Syst., P91
+   Geiger A, 2014, IEEE Trans. Pattern Anal. Mach. Intell., V36, P1012
+   Dean T, 2013, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P1814
+   Zheng S, 2015, Proc. IEEE Int. Conf. Comput. Vis., P1529
+   Felzenszwalb P, 2010, IEEE Trans. Pattern Anal. Mach. Intell., V32, P1627
+   Kar A, 2015, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P1966
+   Zia M, 2013, IEEE Trans. Pattern Anal. Mach. Intell., V35, P2608
+   Gupta A, 2010, Proc. Eur. Conf. Comput. Vis., P482
+   Ozuysal M, 2009, Proc. IEEE Conf. Comput. Vis. Pattern Recognit., P778
+   Rothganger F, 2006, Int. J. Comput. Vis., V66, P231
+   Hoiem D, 2008, Int. J. Comput. Vis., V80, P3
+NR 50
+TC 20
+BP 1281
+EP 1294
+PY 2018
+VL 40
+IS 6
+DI 10.1109/TPAMI.2017.2701373
+UT 2-s2.0-85046850194
+ER
+
+PT J
+AU Heitz, G
+   Gould, S
+   Saxena, A
+   Koller, D
+AF Heitz, G
+   Gould, S
+   Saxena, A
+   Koller, D
+TI Cascaded Classification models: Combining models for holistic scene
+   understanding
+SO ADVANCES IN NEURAL INFORMATION PROCESSING SYSTEMS 21 - PROCEEDINGS OF THE 2008 CONFERENCE
+DT Conference Paper
+C1 [Heitz, G] Department of Electrical Engineering, Stanford University, Stanford, CA 94305, United States
+   [Gould, S] Department of Electrical Engineering, Stanford University, Stanford, CA 94305, United States
+   [Saxena, A] Department of Computer Science, Stanford University, Stanford, CA 94305, United States
+   [Koller, D] Department of Computer Science, Stanford University, Stanford, CA 94305, United States
+CR Barrow H, 1978, CVS
+   Brubaker S, 2005, Tech Report GIT-GVU-05-28
+   Criminisi A, 2004, http://research.microsoft.com/vision/cambridge/recognition, Online
+   Everingham M, 2005, MLCW
+   Freund Y, 1995, European Conference on Computational Learning Theory, P23
+   Gould S, 2008, IJCV
+   Hoiem D, 2008, Closing the Loop on Scene Interpretation
+   Kumar S, 2005, ICCV
+   Li F, 2005, CVPR
+   Marcus M, 1993, Comput. Linguist., V19
+   Russell B, 2008, IJCV
+   Saxena A, 2008, PAMI
+   Sudderth E, 2006, CVPR
+   Sutton C, 2005, CoNLL
+   Torralba A, 2004, NIPS
+   Tu Z, 2008, CVPR
+   Viola P, 2001, IJCV
+   Dalal N, 2005, CVPR
+NR 18
+TC 109
+BP 641
+EP 648
+PY 2009
+UT 2-s2.0-84858763935
+ER
+
+PT J
+AU Sawhney, HS
+   Guo, Y
+   Kumar, R
+AF Sawhney, HS
+   Guo, Y
+   Kumar, R
+TI Independent motion detection in 3D scenes
+SO IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE
+DT Article
+C1 [Sawhney, HS] Sarnoff Corporation, CN5300, Princeton, NJ 08543., United States
+   [Guo, Y] Sarnoff Corporation, CN5300, Princeton, NJ 08543., United States
+   [Kumar, R] Sarnoff Corporation, CN5300, Princeton, NJ 08543., United States
+CR Adiv G,
+   Bergen Et Al J,
+   Fejes S,
+   Hanna K,
+   Hartley R,
+   Irani M,
+   Kumar R,
+   Lourakis M,
+   Lucas B,
+   Sawhney H,
+   Sawhney H,
+   Shashua A,
+   Shashua A,
+   Stein G,
+   Torr P,
+   Torr P,
+   Zhang Et Al Z,
+NR 17
+TC 53
+BP 1191
+EP 1199
+PY 2000
+VL 22
+IS 10
+DI 10.1109/34.879803
+UT 2-s2.0-0034290943
+ER
+
+PT J
+AU Nüchter, A
+   Hertzberg, J
+AF Nüchter, A
+   Hertzberg, J
+TI Towards semantic maps for mobile robots
+SO ROBOTICS AND AUTONOMOUS SYSTEMS
+DT Article
+C1 [Nüchter, A] University of Osnabrück, Institute of Computer Science, Knowledge-Based Systems Research Group, Albrechtstr. 28, D-49069 Osnabrück, Germany
+   [Hertzberg, J] University of Osnabrück, Institute of Computer Science, Knowledge-Based Systems Research Group, Albrechtstr. 28, D-49069 Osnabrück, Germany
+CR ,
+   Besl P, 1992, IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), V14, P239
+   Brachman R, 2004, Morgan Kaufmann
+   Burgard W, 2008, Springer Handbook of Robotics, , Springer
+   , 2006, Lecture Notes in Computer Science (LNCS), 3948. , Christensen H., and Nagel H.-H. (Eds), Springer Verlag, Berlin
+   Coradeschi S, 2003, Robotics and Autonomous Systems, V43, P85
+   Georgiev A, 2004, IEEE Transactions on Robotics and Automation (TRO), V20, P851
+   Ghallab M, 2004, Morgan Kaufmann
+   Harnad S, 1990, Physica D, V42, P335
+   Horn B, 1987, Journal of Optical Society of America A, V4, P629
+   Kestler H, 2000, KI-Künstliche Intelligenz, P23
+   Kuipers B, 1993, Toward Learning Robots
+   McDermott D, 1992, AI Magazine, V13, P55
+   Mokhtarian F, 1995, IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), V17, P539
+   Neumann B, 2006, Lecture Notes in Computer Science (LNCS), 3948. , Cognitive Vision Systems-Sampling the Spectrum of Approaches. Christensen H., and Nagel H.-H. (Eds), Springer Verlag
+   Nüchter A, 2007, Journal of Field Robotics (JFR), V24, P699
+   Pfaff P, 2007, International Journal of Robotics Research (IJRR), (February)
+   Russell S, 2003, Prentice Hall, Englewood Cliffs, NJ
+   Siegwart R, 2004, MIT Press, Cambridge, MA
+   Thrun S, 2005, MIT Press
+   Viola P, 2004, International Journal of Computer Vision, V57, P137
+   Waltz D, 1975, McGraw-Hill, New York, U.S.A
+NR 22
+TC 283
+BP 915
+EP 926
+PY 2008
+VL 56
+IS 11
+DI 10.1016/j.robot.2008.08.001
+UT 2-s2.0-53849127134
+ER
+
+PT J
+AU Zia, MZ
+   Stark, M
+   Schindler, K
+AF Zia, MZ
+   Stark, M
+   Schindler, K
+TI Towards Scene Understanding with Detailed 3D Object Representations
+SO INTERNATIONAL JOURNAL OF COMPUTER VISION
+DT Article
+C1 [Zia, MZ] Swiss Federal Institute of Technology (ETH), Zurich, Switzerland, Imperial College London, London, United Kingdom
+   [Stark, M] Max Planck Institute for Informatics, Saarbrücken, Germany
+   [Schindler, K] Swiss Federal Institute of Technology (ETH), Zurich, Switzerland
+CR Bao S, 2011, . Semantic structure from motion. In CVPR
+   Belongie S, 2000, . Shape context: A new descriptor for shape matching and object recognition. In NIPS
+   Bourdev L, 2009, . Poselets: Body part detectors trained using 3D human pose annotations. In ICCV
+   Brooks R, 1981, Artificial Intelligence, V17, P285
+   Choi W, 2013, . Understanding indoor scenes using 3D geometric phrases. In CVPR
+   Cootes T, 1995, Computer Vision and Image Understanding, V61, P38
+   Dalal N, 2005, . Histograms of oriented gradients for human detection. In CVPR
+   Del Pero L, 2013, . Understanding Bayesian rooms using composite 3D object models. In CVPR
+   Enzweiler M, 2010, . Multi-Cue pedestrian classification with partial occlusion handling. In CVPR
+   Ess A, 2009, Pattern Analysis and Machine Intelligence, V31, P1831
+   Everingham M, 2010, International Journal of Computer Vision, V88, P303
+   Felzenszwalb P, 2010, Pattern Analysis and Machine Intelligence, V32, P1627
+   Fransens R, 2006, . A mean field EM-algorithm for coherent occlusion handling in MAP-estimation. In CVPR
+   Gao T, 2011, . A segmentation-aware object detection model with occlusion handling. In CVPR
+   Geiger A, 2012, . Are we ready for autonomous driving?. The KITTI vision benchmark suite. In CVPR
+   Geiger A, 2011, . Joint 3D estimation of objects and scene layout. In NIPS
+   Girshick R, 2011, . Object detection with grammar models. In NIPS
+   Gupta A, 2010, . Blocks world revisited: Image understanding using qualitative geometry and mechanics. In ECCV
+   Haag M, 1999, International Journal of Computer Vision, V35, P295
+   Hedau V, 2010, . Thinking inside the box: Using appearance models and context based on room geometry. In ECCV
+   Hejrati M, 2012, . Analyzing 3D objects in cluttered images. In NIPS
+   Hoiem D, 2008, International Journal of Computer Vision, V80, P3
+   Kanade T, 1980, Artificial Intelligence, V13, P279
+   Koller D, 1993, International Journal of Computer Vision, V10, P257
+   Kwak S, 2011, . Learning occlusion with likelihoods for visual tracking. In ICCV
+   Leibe B, 2006, . An implicit shape model for combined object categorization and segmentation. In Toward category-level object recognition
+   Leordeanu M, 2008, . Smoothing-based optimization. In CVPR
+   Li Y, 2011, Pattern Analysis and Machine Intelligence, V33, P1860
+   Liu X, 2014, . Single-view 3D scene parsing by attributed grammar. In CVPR
+   Maji S, 2009, . Object detection using a max-margin hough transform. In CVPR
+   Malik J, 1987, International Journal of Computer Vision, V1, P73
+   Meger D, 2011, . Explicit occlusion reasoning for 3d object detection. In BMVC
+   Oramas J, 2013, . Allocentric pose estimation. In ICCV
+   Pentland A, 1986, Artificial Intelligence, V28, P293
+   Pepik B, 2013, . Occlusion patterns for object class detection. In CVPR
+   Roberts L, 1963, MIT
+   Schönborn S, 2013, . A Monte Carlo strategy to integrate detection and model-based face analysis. In GCPR
+   Silberman N, 2012, . Indoor segmentation and support inference from RGBD images. In ECCV
+   Stark M, 2010, . Back to the future: Learning shape models from 3D CAD data. In BMVC
+   Sullivan G, 1995, . Visual object recognition using deformable models of vehicles. In IEEE workshop on context-based vision
+   Tang S, 2012, . Detection and tracking of occluded oeople. In BMVC
+   Vedaldi A, 2009, . Structured output regression for detection with partial truncation. In NIPS
+   Villamizar M, 2011, . Efficient 3D object detection using multiple pose-specific classifiers. In BMVC
+   Wang H, 2010, . Discriminative learning with latent variables for cluttered indoor scene understanding. In ECCV
+   Wang X, 2009, . An HOG-LBP human detector with partial occlusion handling. In ICCV
+   Wojek C, 2013, . Monocular visual scene understanding: Understanding multi-object traffic scenes. In PAMI
+   Xiang Y, 2013, . Object detection by 3D aspectlets and occlusion reasoning. In 3dRR
+   Xiang Y, 2012, . Estimating the aspect layout of object categories. In CVPR
+   Zhao Y, 2013, . Scene parsing by integrating function, geometry and appearance models. In CVPR
+   Zia M, 2009, . Acquisition of a dense 3D model database for robotic vision. In ICAR
+   Zia M, 2013, . Explicit occlusion modeling for 3D object class representations. In CVPR
+   Zia M, 2014, . Are cars just 3D boxes? Jointly estimating the 3D shape of multiple objects. In CVPR
+   Zia M, 2013, Pattern Analysis and Machine Intelligence, V35, P2608
+   Lowe D, 1987, Artificial Intelligence, V31, P355
+NR 54
+TC 56
+BP 188
+EP 203
+PY 2015
+VL 112
+IS 2
+DI 10.1007/s11263-014-0780-y
+UT 2-s2.0-84925533574
+ER
+

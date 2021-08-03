@@ -1,0 +1,16 @@
+{
+	"title": "Summary",
+	"plugins" : [
+		"expandable-chapters",
+		"github-buttons",
+		"copy-code-button",
+		"anchor-navigation-ex",
+		"expandable-chapters-small",
+		"-highlight",
+		"-lunr", 
+		"-search", 
+		"search-pro",
+		"splitter"
+	],
+	"ignores" : ["_book", "node_modules"]
+}	
