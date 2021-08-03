@@ -37,6 +37,7 @@ jobs:
         MYNAME: ${{github.repository_owner}}          
       run: |
         cd _book
+        touch .nojekyll
         git config --global user.email "${MYEMAIL}"
         git config --global user.name "${MYNAME}"
         git init
