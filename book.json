@@ -4,13 +4,7 @@
 		"expandable-chapters",
 		"github-buttons",
 		"copy-code-button",
-		"anchor-navigation-ex",
-		"expandable-chapters-small",
-		"-highlight",
-		"-lunr", 
-		"-search", 
-		"search-pro",
-		"splitter"
+		"anchor-navigation-ex"
 	],
 	"ignores" : ["_book", "node_modules"]
 }	
