@@ -392,8 +392,3 @@ vscode在root下打不开，换成普通用户
 安装搜狗输入法：https://pinyin.sogou.com/linux/help.php
 
 
-
-
-
-
-
