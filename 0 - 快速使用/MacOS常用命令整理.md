@@ -1,4 +1,27 @@
-## 环境变量
+# macOS 常用命令整理
+
+## 一、基础篇
+
+### 1. 快捷键
+
+1. 不能使用'.'开头的文件&无法显示'.'开头的文件：因为这些名称已经被系统预留，请选择其他名称“ > Finder显示隐藏文件：command + shift+ . 三个按键
+2. 重启Finder：按住 option 键，右键 Finder 图标–> 重新开启
+3. 强制退出应用程序：command + option + ESC
+
+### 2. 移动光标+选中文字
+
+跳到本行开头/末尾 – Command + 左方向键←/右方向键→ 
+跳到当前单词的开头/末尾 – Option + 左方向键← / 右方向键→ 
+
+选中当前位置到本行开头/末尾的文字 – Shift + Command + 左方向键←/右方向键→ 
+选中当前位置到所在单词开头/末尾的文字 – Shift + Option + 左方向键← / 右方向键→ 
+选中当前位置到整个文档开头/末尾的文字 – Shift + Command + 上方向键↑ / 下方向键↓
+
+-----
+
+## 三、需求篇
+
+### 1. 环境变量
 
 > 原文地址 [www.jianshu.com](https://www.jianshu.com/p/07494f169380)
 
@@ -44,9 +67,7 @@ source ./.bash_profile
 
 应用完毕后，在终端输入 adb，能出现 adb 命令的帮助。或者 python --version，能出现 python3 版本提示，就代表配置成功了。
 
-
-
-## Finder分栏模式的宽度设置
+## 2. Finder分栏模式的宽度设置
 
 >  原文地址 [blog.csdn.net](https://blog.csdn.net/gnail_oug/article/details/79848188)
 
@@ -64,25 +85,3 @@ source ./.bash_profile
 
 
 
-## 快捷键
-
-1. ”您不能使用'.'开头的名称 ，因为这些名称已经被系统预留，请选择其他名称“ > Finder显示隐藏文件：⌘+ ⇧+.三个按键
-2. 重启Finder：按住`option`键，右键 Finder 图标–> 重新开启
-
-### 移动光标+选中文字
-
-跳到本行开头 – Command + 左方向键← 
-跳到本行末尾 – Command + 右方向键→ 
-跳到当前单词的开头 – Option + 左方向键← 
-跳到当前单词的末尾 – Option + 右方向键→ 
-跳到整个文档的开头 – Command + 上方向键↑ 
-跳到整个文档的末尾 – Command + 下方向键↓
-
-
-
-选中当前位置到本行开头的文字 – Shift + Command + 左方向键← 
-选中当前位置到本行末尾的文字 – Shift + Command + 左方向键→ 
-选中当前位置到所在单词开头的文字 – Shift + Option + 左方向键← 
-选中当前位置到所在单词末尾的文字 – Shift + Option + 右方向键→ 
-选中当前位置到整个文档开头的文字 – Shift + Command + 上方向键↑ 
-选中当前位置到整个文档末尾的文字 – Shift + Command + 下方向键↓

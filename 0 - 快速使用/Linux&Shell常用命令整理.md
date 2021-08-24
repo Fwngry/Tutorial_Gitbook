@@ -1,4 +1,23 @@
-## 远程连接服务器 Server
+## 一、基础篇
+
+### 查询ip地址
+
+win: ipconfig
+linux: ipconfig
+
+### 查询端口
+
+netstat -na
+
+### 是否联通
+
+ping ip-addr
+win：tcping ip port
+linux：
+telnet 192.192.193.211 22
+nc -v -w 1 172.16.100.133 -z 15000
+
+### 远程连接服务器 Server
 
 ```shell
 # 威富
@@ -8,7 +27,7 @@ ssh wyfubt@server.natappfree.cc -p 37420
 ssh wangyangfan@172.16.0.92
 ```
 
-## Linux包管理器
+### Linux包管理器
 
 建议大家尽快适应并开始首先使用 apt。不仅因为广大 Linux 发行商都在推荐 apt，更主要的还是它提供了 Linux 包管理的必要选项。
 
@@ -66,7 +85,9 @@ Conda 批量安装 requirements.txt 文件中包含的组件依赖
 conda install --yes --file requirements.txt
 ```
 
-## Debug
+----
+
+## 二、Debug篇
 
 > To run a command as administrator (user "root"), use "sudo <command>".
 
@@ -75,7 +96,7 @@ conda install --yes --file requirements.txt
 1. 保持现状：如果你要运行 "ls" 这条命令,那么你就在命令行上输入 "sudo ls",然后会提示你输入密码,那么你就输入密码。
 2. 但如果你想要保持在超级用户(也就是root,相当于管理员)状态的话,可以执行"sudo -s"然后输入密码,你就能作为超级用户执行命令了而不必在每一个命令前加"sudo"了.
 
-## VIM
+### VIM
 
 1. 进入vim模式
 
@@ -108,11 +129,11 @@ Vim /est/ssh/sshd_config
 >> :wq
 ```
 
-## 查询ip地址
+### 查询ip地址
 
 查询ip地址：用“ifconfig”命令 - 观察inet
 
-## 文件与路径
+### 文件与路径
 
 命令pwd用于显示当前所在目录
 
@@ -135,7 +156,7 @@ cd test
 cd /etc/ssh
 ```
 
-##  文件树状结构 - Tree
+###  文件树状结构 - Tree
 
 >  原文地址 [www.runoob.com](https://www.runoob.com/linux/linux-comm-tree.html)
 
@@ -155,7 +176,7 @@ tree --help
 
 
 
-## 重命名
+### 重命名
 
 rename OldName NewName
 
@@ -165,8 +186,9 @@ rename OldName NewName
 
 Linux 中没有下载命令，但是有几个用于下载文件的 Linux 命令。
 
- wget 命令 - 用终端下载文件
-============================
+
+
+## wget 命令 - 用终端下载文件
 
 wget 是非交互式的，可以轻松在后台运行。这意味着您可以轻松地在脚本中使用它，甚至可以构建 uGet 下载管理器之类的工具。
 
@@ -390,5 +412,4 @@ ubuntu ： 无法安全地用该源进行更新，所以默认禁用该源
 vscode在root下打不开，换成普通用户
 
 安装搜狗输入法：https://pinyin.sogou.com/linux/help.php
-
 
